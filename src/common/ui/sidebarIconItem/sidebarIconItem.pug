@@ -1,0 +1,11 @@
+mixin sidebarIconItem(options) 
+  -const {num, title, color, icon, subtitle} = options || {};
+
+  .sidebar-icon-item(class!= attributes.class) 
+    .icon-wrapper
+      img.sidebar-icon-icon(src=require(`../../assets/svg/sidebarIcons/${icon}.svg`))
+    span.num(style={color: color})= num 
+    span.title= title 
+    if(subtitle)
+      span.subtitle= subtitle
+

@@ -1,0 +1,60 @@
+.organizational-row {
+  display: flex;
+  align-items: start;
+
+  .image-wrapper {
+    width: 81px;
+    min-width: 81px;
+    height: 57px;
+    text-align: center;
+  }
+
+  .text-content-col {
+    display: flex;
+    flex-direction: column;
+
+    .text-content {
+      margin-top: 10px;
+      display: flex;
+      align-items: start;
+
+      .title-second-row {
+        margin-left: 16px;
+      }
+  
+      .amount {
+        width: 62px;
+        min-width: 62px;
+        margin-left: 16px;
+        color: var(--color-yellow);
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+  
+      .col {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    
+        .row {
+          display: flex;
+          align-items: flex-end;
+    
+          .subtitle {
+            margin-left: 10px;
+          }
+        }
+    
+        .title {
+          text-align: start;
+        }
+        .subtitle {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,20 @@
+mixin iconHiveItem(options)
+  -const {icon, percent, text1, text2, isReverse} = options || {};
+  .iconHiveItem(class!= attributes.class)
+    if(isReverse == true) 
+      span.num= percent 
+      .text= text1 
+      if(text2)
+        span.text= text2
+      if(icon)
+        img.icon(src=require(`../../assets/svg/hiveIcons/${icon}.svg`))
+      block  
+    else
+      if(icon)
+        img.icon(src=require(`../../assets/svg/hiveIcons/${icon}.svg`))
+      block  
+      span.num= percent 
+      .text= text1 
+      if(text2)
+        span.text= text2 
+      

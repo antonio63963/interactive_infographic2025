@@ -1,0 +1,29 @@
+.topics-row {
+  --gap: clamp(5px, 2rem, 20px);
+  display: flex;
+  max-width: 100%;
+  width: var(--app-width);
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+
+  .topic-item {
+    flex-basis: 246px;
+    max-width: 246px;
+  }
+  .topic-item-big {
+    flex-basis: 512px;
+    max-width: 512px;
+  }
+  .topic-img {
+    object-fit: contain;
+    max-width: 100%;
+  }
+  .topic-item,
+  .topic-item-big {
+    cursor: pointer;
+  }
+  .topic-item:hover,
+  .topic-item-big:hover {
+    opacity: 0.7;
+  }
+}

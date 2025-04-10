@@ -1,0 +1,152 @@
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/barChartItem/barChartItem.pug
+include ../../common/ui/genderChart/genderChart.pug
+include ../../common/ui/twoValuesRow/twoValuesRow.pug
+include ../../common/ui/chart_info_icons/chart_info_icons.pug
+
+
+mixin InnovationCurationsPage()
+  +popupPage({
+    title: 'Innovation and Enterprise - Curations', 
+    closeClass: 'innovationCurationsClose',
+    headerColor: '#D6EDFF',
+    buttonColor: '#B4DFFF'
+    })(class="innovationCurationsPage")
+
+    .container-innovationCurations 
+      .sidebar-vertical(class="sidebar-innovation-curation sidebar-three-items")
+        +sidebarIconItem({
+          num: 70, 
+          title: 'Trainings',
+          color: '#569FD6', 
+          icon: 'education'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: 6, 
+          title: 'Outreach Events',
+          color: '#569FD6', 
+          icon: 'folderStarBlue'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: 1116, 
+          title: 'Beneficiaries',
+          color: '#569FD6', 
+          icon: 'persons'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: '844K', 
+          title: 'KD Amount Approved',
+          color: '#569FD6', 
+          icon: 'kdBlue'
+          })(class="sidebar-vertical-item moveToRight")
+      .divider-vertical    
+
+      .innovation-curations-content         
+        h2.col-title Beneficiaries
+        .bar-chart 
+          .bar-chart-graph 
+            .bar-item
+              .bar.lee.scaleX
+            .bar-item
+              .bar.enrolment.scaleX
+              .bar-value
+            .bar-item
+              .bar.local.scaleX
+            .bar-item
+              .bar.programs.scaleX
+            .bar-item
+              .bar.abroad.scaleX
+          .description
+            +barChartItem({
+              title: 'LEE Outreach (Speaker Event)',  
+              percent: '100%', 
+              color: '#F47D39',
+              num: 367
+              })(class="description-item")
+            +barChartItem({
+              title: 'Open Enrolment', 
+              percent: '85%',
+              color: '#F47D39',
+              num: 305
+
+              })(class="description-item")
+            +barChartItem({
+              title: 'Local Executive Education',  
+              percent: '36%', 
+              color: '#FFB455',
+              num : 235,
+              })(class="description-item")
+            +barChartItem({
+              title: 'Custom Programs',  
+              percent: '40%', 
+              color: '#569FD6',
+              num: 125
+              })(class="description-item")
+            +barChartItem({
+              title: 'Abroad Executive Eduction', 
+              percent: '3%', 
+              color: '#569FD6',
+              num: 84
+              })(class="description-item")
+        .second-row
+          section.gender-section
+            h2.gender-title Gender Distribution
+            .gender-col
+              +genderChart({canvasId: "innovation-curations-gender-1"})
+              .gender-col
+                +twoValuesRow({val1: '63', isOrange: false})(class="inno-curations-value")
+                +twoValuesRow({val1: '37', isOrange: true})(class="inno-curations-value")
+          section.benefic-section
+            h2.benefic-title Beneficiaries by Sector 
+            span.benefic-subtitle (Trainings courses)
+            .benefic-chart 
+              .chart-item(
+                style={'background-color': "#FFB455", width: 0},
+                data-value="656"
+              ) 
+              .chart-item(
+                style={"background-color":"#569FD6", width: 0},
+                data-value="54"
+              ) 
+              .chart-item(
+                style={"background-color":"#F47D39", width: 0},
+                data-value="14"
+              ) 
+              .chart-item(
+                style={"background-color":"#969696", width: 0},
+                data-value="4"
+              ) 
+              .chart-item(
+                style={"background-color":"#00476B", width: 0},
+                data-value="3"
+              )
+            .benefic-chart-description 
+              .benefic-chart-col
+                +chartInfoIcons({
+                  digit: 656, 
+                  text: 'Private'
+                  })
+                  img(src=require('../../assets/svg/personYellow.svg')) 
+                +chartInfoIcons({
+                  digit: 14, 
+                  text: 'KFAS and Centers'
+                  })
+                  img(src=require('../../assets/svg/logo50.svg')) 
+                +chartInfoIcons({
+                  digit: 3, 
+                  text: 'NGO'
+                  })
+                  img(src=require('../../assets/svg/globus.svg')) 
+              .benefic-chart-col
+                +chartInfoIcons({
+                  digit: 54, 
+                  text: 'Public'
+                  })
+                  img(src=require('../../assets/svg/groupBlue.svg'))
+                +chartInfoIcons({
+                  digit: 4, 
+                  text: 'Academic / Research'
+                  })
+                  img(src=require('../../assets/svg/hatGrey.svg'))    

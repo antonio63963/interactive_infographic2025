@@ -1,0 +1,53 @@
+include ../../common/ui/appPageLayout/appPageLayout.pug
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+include ../../common/ui/twoValuesRow/twoValuesRow.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/genderBreakdown/genderBreakdown.pug
+
+
+mixin MathGrantPage()
+  +popupPage({
+    title: 'Math and Science Education - Grants', 
+    closeClass: 'mathGrantClose',
+    headerColor: '#FFE4C1',
+    buttonColor: '#FFCF90'
+    })(class="mathGrantPage")
+
+    .container-math-grant 
+      .sidebar-vertical.sidebar-three-items 
+        +sidebarIconItem({num: 6, title: 'Events', color: '#F36D20', icon: 'folderStarOrange'})(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({num: 133, title: 'Beneficiaries', color: '#F36D20', icon: 'persons'})(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({num: '15.9k', title: 'KD Amount Approved', color: '#F36D20', icon: 'kdOrange'})(class="sidebar-vertical-item moveToRight")
+      .divider-vertical 
+
+      .mathGrant__graph-main 
+        .binefic-row 
+          .binefic__chart-wrapper
+            h2.binefic__chart-title Number of Beneficiaries
+            .binefic__chart
+              canvas#grant-chart
+          ul.binefic__list
+            li.binefic__list-item.moveToLeft
+              span.binefic__item-value.large-num 62
+              p.binefic__item-text مبادرة نحمیھا
+            li.binefic__list-item.moveToLeft
+              span.binefic__item-value.big-num 25
+              p.binefic__item-text Python (1st group) - المعلومات الجمعیة الكويتيه لتقنیة
+            li.binefic__list-item.moveToLeft
+              span.binefic__item-value.big-num 25
+              p.binefic__item-text Python (2nd group) - المعلومات الجمعیة الكويتيه لتقنیة
+            li.binefic__list-item.moveToLeft
+              span.binefic__item-value.middle-num 7
+              p.binefic__item-text US Academy virtual program (Boston University)
+            li.binefic__list-item.moveToLeft
+              span.binefic__item-value.middle-num 7
+              p.binefic__item-text US Academy virtual program (Embry Riddle Aeronautical University)
+            li.binefic__list-item.moveToLeft
+              span.binefic__item-value.middle-num 7
+              p.binefic__item-text US Academy virtual program (University of Wisconsin)
+
+
+        +genderBreakdown({maleVal1: 35, femaleVal1: 65})
+
+

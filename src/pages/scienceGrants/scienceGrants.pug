@@ -1,0 +1,54 @@
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/sidebarHorizontal/sidebarHorizontal.pug
+include ../../common/ui/chart_info_icons/chart_info_icons.pug
+
+
+
+mixin ScienceGrantPage()
+  +popupPage({
+    title: 'Science Dissemination - Grants', 
+    closeClass: 'scienceGrantClose',
+    headerColor: '#FFE4C1',
+    buttonColor: '#FFCF90'
+    })(class="scienceGrantPage")
+
+    .container-science-grants  
+      +sidebarHorizontal()(class="scienceGrant__sidebar sidebar-three-items")  
+        +sidebarIconItem({
+          num: 36, 
+          title: 'Applications Received', 
+          color: '#F47D39', 
+          icon: 'personInputOrange'
+          })(class="sidebar__img moveToRight")
+        +sidebarIconItem({
+          num: 18, 
+          title: 'Applications Approved', 
+          color: '#F47D39', 
+          icon: 'personCheckedOrange'
+          })(class="sidebar__img moveToRight")
+        +sidebarIconItem({
+          num: '170k', 
+          title: 'KD Amount Approved', 
+          color: '#F47D39', 
+          icon: 'kdOrange'
+          })(class="sidebar__img moveToRight")
+
+      h2 Beneficiaries 
+      .chart-grants 
+        .grant-ngo.scaleX.grant-item
+        .grant-public.scaleX.grant-item
+        .grant-academic.scaleX.grant-item
+        .grant-private.scaleX.grant-item
+
+      .chart-description 
+        .chart-description-row.moveUp 
+          +chartInfoIcons({digit: 20, text: 'Non-Governmental Organizations'})
+            img(src=require('../../assets/svg/scienceGrant/ngo.svg'))
+          +chartInfoIcons({digit: 7, text: 'Public'})
+            img(src=require('../../assets/svg/scienceGrant/public.svg'))
+        .chart-description-row.moveUp
+          +chartInfoIcons({digit: 6, text: 'Academic / Research'})
+            img(src=require('../../assets/svg/scienceGrant/academic.svg'))
+          +chartInfoIcons({digit: 3, text: 'Private'})
+            img(src=require('../../assets/svg/scienceGrant/private.svg'))

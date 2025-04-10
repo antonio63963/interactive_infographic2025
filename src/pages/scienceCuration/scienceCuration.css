@@ -1,0 +1,101 @@
+@import "../../common/styles/constants.css";
+@import "../../common/styles/animation.css";
+
+.container-science-curation {
+  width: 994px;
+  max-width: 100vw;
+  display: flex;
+  padding: 38px 0 60px 0;
+
+  .divider-vertical {
+    height: 600px;
+  }
+}
+.content-science-curration {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 20px 0 clamp(20px, 10rem, 55px);
+
+}
+/* CHART */
+.science-curation-binefic-titile {
+  margin-bottom: 24px;
+}
+
+.science-curation-binefic-chart {
+  width: 560px;
+  max-width: calc(100vw - 40px);
+  display: flex;
+  .science-curation-binefic-graph {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 2px solid var(--color-black);
+    border-width: 0 2px 0 0;
+
+    .binefic-item-s-cur {
+      height: 17px;
+      background: #FFB455;
+      transition: all 1s ease-in-out;
+      margin: 8px 0;
+      transform-origin: right;
+    }
+    .cso-sinior {
+      width: 100%;
+    }
+    .coded {
+      width: 96%;
+    }
+    .cso-junior {
+      width: 90%;
+    }
+    .citizen {
+      width: 72%;
+    }
+    .nasa {
+      width: 42%;
+    }
+    .ds2 {
+      width: 32%;
+    }
+    .ds {
+      width: 28%;
+    }
+    .ds-workshop {
+      width: 21%;
+    }
+    .gust {
+      width: 16%;
+    }
+  }
+  .science-curation-binefic-info {
+    margin-left: clamp(12px, 2rem, 20px);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-science-curation {
+    flex-direction: column;
+    align-items: center;
+
+    .divider-vertical {
+      height: 0;
+    }
+  }
+  .content-science-curration {
+    margin: 60px 20px 0 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .science-curation-binefic-chart {
+    /* margin-top: 22px; */
+    justify-content: center;
+    .science-curation-binefic-graph {
+      display: none;
+    }
+  }
+}

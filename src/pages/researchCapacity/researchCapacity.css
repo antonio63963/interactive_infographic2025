@@ -1,0 +1,99 @@
+@import "../../common/styles/constants.css";
+@import "../../common/styles/animation.css";
+
+.container-research-capacity {
+  max-width: calc(100vw);
+  width: 800px;
+  display: flex;
+  padding: 0 20px 57px 20px;
+
+  .research-capacity-content {
+    width: 100%;
+    margin: 40px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+    .legend-row {
+      display: flex;
+      width: 250px;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    .capacity-chart {
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+
+      .capacity-chart-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 107px;
+
+        .capacity-description-item {
+          font-size: 12px;
+          height: 60px;
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          margin-right: 14px;
+          text-align: end;
+        }
+        .capacity-description-item:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .chart-graph {
+        padding: 6px 0;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid var(--color-black);
+        border-width: 0 0 0 2px;
+        width: 485px;
+        max-width: 485px;
+
+        .description-mobile {
+          font-size: 12px;
+          margin-left: 12px;
+          margin-bottom: 5px;
+          display: none;
+        }
+
+        .chart-item {
+          margin-bottom: 32px;
+        }
+        .chart-item:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .container-research-capacity {
+    .research-capacity-content {
+      .capacity-chart {
+        .capacity-chart-description {
+          display: none;
+        }
+        .chart-graph {
+          padding: 0 0  3px 0;
+          border-width: 0;
+          width: 100%;
+
+          .description-mobile {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+}

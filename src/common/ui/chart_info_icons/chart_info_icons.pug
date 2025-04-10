@@ -1,0 +1,7 @@
+mixin chartInfoIcons(options)
+  -const {iconName, digit, text} = options || {};
+  .chart-info(class!= attributes.class) 
+    block
+    .chart-info-value 
+      span.chart-info-digit= digit
+      span.chart-info-text= text

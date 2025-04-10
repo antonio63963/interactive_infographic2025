@@ -1,0 +1,10 @@
+include ../appHeaderDetails/appHeaderDetails.pug
+
+mixin popupPage(options)
+  -const {title, closeClass, headerColor, buttonColor} = options || {};
+
+  .popup-bg.hidden(class!= attributes.class)
+    .click-opacity
+      .popup 
+        +appHeaderDetails({title, closeClass, headerColor, buttonColor})
+        block

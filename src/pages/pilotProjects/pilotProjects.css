@@ -1,0 +1,167 @@
+@import "../../common/styles/constants.css";
+@import "../../common/styles/animation.css";
+
+.content-pilot-projects {
+  width: var(--app-width);
+  max-width: 100vw;
+  padding: 40px clamp(20px, 3.2rem, 32px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pilot-projects-labels {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  .pilot-project-label {
+    margin-right: 50px;
+  }
+}
+.pilotProjects-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pilotProjects__header {
+  background-color: #d6edff;
+  width: var(--app-width);
+  max-width: 100vw;
+  
+  .header__close-button {
+    background-color: #b4dfff;
+  }
+}
+
+.container-pilotProjects {
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  background-color: var(--color-white);
+  max-width: 100vw;
+}
+
+.border-bottom {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 0 1px 0;
+}
+.border-without-top {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 1px 1px 1px;
+}
+.border-horizontal {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 1px;
+}
+
+/* cards */
+.pilot-electric {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 0 1px 0;
+}
+.pilot-green {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 1px 1px 1px;
+}
+.pilot-bio {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 1px 1px 0;
+}
+.pilot-kfas {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 0 1px 0;
+}
+.pilot-university {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0;
+}
+.pilot-solar {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 1px 0 1px;
+}
+.pilot-co {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 1px 0 0px;
+}
+.pilot-service {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 0px 0 0px;
+}
+
+
+
+@media screen and (max-width: 1033px) {
+  .container-pilotProjects {
+    width: 732px;
+  }
+  .pilot-bio {
+    border-width: 0 0 1px 0;
+  }
+  .pilot-kfas {
+    border: 1px solid #b3a3a3a3;
+    border-width: 0 0 1px 0;
+  }
+  .pilot-university {
+    border-width: 0 1px 1px 1px;
+  }
+  .pilot-solar {
+    border-width: 0 0 1px 0;
+  }
+  .pilot-co {
+    border-width: 0;
+  }
+  .pilot-service {
+    border-width: 0 1px;
+  }
+}
+@media screen and (max-width: 731px) {
+  .pilot-projects-labels {
+    width: 80%;
+  }
+  .container-pilotProjects {
+    width: 500px;
+  }
+
+  .pilot-green {
+    border-width: 0 0 1px 1px;
+  }
+  .pilot-bio {
+    border-width: 0 0 1px 0;
+  }
+  .pilot-kfas {
+    border-width: 0 0 1px 1px;
+  }
+  .pilot-university {
+    border-width: 0 0 1px 0;
+  }
+  .pilot-solar {
+    border-width: 0 0 1px 1px;
+  }
+  .pilot-service {
+    border-width: 0 0 0 1px;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  .container-pilotProjects {
+    max-width: 280px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pilot-electric,
+  .pilot-green,
+  .pilot-bio,
+  .pilot-kfas,
+  .pilot-university,
+  .pilot-solar,
+  .pilot-co {
+    border-width: 0 0px 1px 0px;
+  }
+  .pilot-service {
+    border-width: 0;
+  }
+
+  .pilot-projects-labels {
+    flex-direction: column;
+  }
+}

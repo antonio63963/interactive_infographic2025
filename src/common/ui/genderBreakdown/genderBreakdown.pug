@@ -1,0 +1,16 @@
+mixin genderBreakdown(options)
+  -const {maleVal1, maleVal2, femaleVal1, femaleVal2} = options || {};
+  section.gender-breakdown
+    h2.gender-breakdown-title Gender Breakdown
+    .gender-breakdown-row
+      if(maleVal1 == 35)
+        .gender-breakdown-svg-wrapper
+          img.gender-breakdown-svg(src=require("../../assets/svg/gender-male-35.svg"))
+          img.gender-breakdown-vertical-svg(src=require("../../assets/svg/gender-male-35-vertical.svg"))
+      else
+        .gender-breakdown-svg-wrapper
+          img.gender-breakdown-svg(src=require("../../assets/svg/gender.svg"))
+          img.gender-breakdown-vertical-svg(src=require("../../assets/svg/gender-brake-vertical.svg"))
+      .gender-breakdown-row__col 
+        +twoValuesRow({val1: femaleVal1, isOrange: true})(class="gender-breakdown-values moveUp")
+        +twoValuesRow({val1: maleVal1})(class="gender-breakdown-values moveUp")

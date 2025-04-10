@@ -1,0 +1,98 @@
+@import "../../common/styles/constants.css";
+@import "../../common/styles/animation.css";
+
+.container-science-grants {
+  width: 800px;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 24px;
+  }
+}
+
+
+/* Content */
+.chart-grants {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  margin-bottom: 16px;
+  width: 507px;
+  max-width: calc(100vw - 40px);
+  .grant-ngo {
+    transform-origin: left;
+    height: 73px;
+    /* width: 260px; */
+    width: 50%;
+    background-color: var(--color-orange);
+    transition: all 1s linear;
+  }
+  .grant-public {
+    transform-origin: left;
+    height: 73px;
+    /* width: 90px; */
+    width: 20%;
+    background-color: var(--color-blue);
+    transition: all 0.5s linear 1s;
+  }
+  .grant-academic {
+    transform-origin: left;
+    height: 73px;
+    /* width: 77px; */
+    width: 15%;
+    background-color: #00476b;
+    transition: all 0.5s linear 1.5s;
+  }
+  .grant-private {
+    transform-origin: left;
+    height: 73px;
+    /* width: 39px; */
+    width: 10%;
+    background-color: #969696;
+    transition: all 0.5s linear 2s;
+  }
+  .grant-item {
+    margin-right: 10px;
+  }
+}
+/* ICONS */
+.chart-description {
+  width: 507px;
+  max-width: calc(100vw - 40px);
+  padding-right: 30px;
+  padding-bottom: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .chart-description-row {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chart-description {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .chart-description-row {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+  .chart-grants {
+
+    .grant-item {
+      margin-right: 5px;
+    }
+  }
+}

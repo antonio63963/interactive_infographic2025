@@ -1,0 +1,7 @@
+mixin prizeLabel(options) 
+  -const {title, color} = options || {};
+  .prizeLabel(class!= attributes.class)
+    .fill-sector(style={"background-color": color})
+      h2= title 
+    .marker(style={"background-color": color}) 
+    img.icon(src=require("../../assets/svg/prize.svg"))

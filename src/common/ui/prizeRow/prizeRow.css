@@ -1,0 +1,24 @@
+.prize-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  border-width: 0 0 1px 0;
+
+  .person {
+    font-size: 14px;
+  }
+  .job-title-wrapper {
+    padding-left: 12px;
+    display: flex;
+    width: 60%;
+    align-items: center;
+
+    .job-title {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/labelWithColor/labelWithColor.pug
+include ../../common/ui/lineWithDotInfo/lineWithDotInfo.pug
+
+
+mixin ResearchNetworkingPage()
+  +popupPage({
+    title: 'Research Promotion, Networking & Outreach', 
+    closeClass: 'researchNetworkingClose',
+    headerColor: '#D6EDFF',
+    buttonColor: '#B4DFFF'
+    })(class="researchNetworkingPage")
+    .container-research-networking 
+      .sidebar-vertical(class="sidebar-research-networking sidebar-three-items")
+        +sidebarIconItem({
+          num: 7, 
+          title: 'Events',
+          color: '#569FD6', 
+          icon: 'folderStarBlue'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: 838, 
+          title: 'Beneficiaries',
+          color: '#569FD6', 
+          icon: 'persons'
+          })(class="sidebar-vertical-item moveToRight")
+
+      .divider-vertical
+
+      .research-Networking-content
+          h2 Beneficiaries
+          .research-networking-row
+            .benefic-chart 
+              .stack-chart-item.webinar(
+                data-percent="37", 
+                data-color="#F47D39",
+                data-font="38px",
+                style={height: 0}
+                )
+              .stack-chart-item.kuwait(
+                data-percent="24", 
+                data-color="#F47D39",
+                data-font="38px",
+                style={height: 0}
+                )
+              .stack-chart-item.conference(
+                data-percent="16", 
+                data-color="#FFB455",
+                data-font="24px",
+                style={height: 0}
+                )
+              .stack-chart-item.results(
+                data-percent="10", 
+                data-color="#FFB455",
+                data-font="24px",
+                style={height: 0}
+                )
+              .stack-chart-item.seminar(
+                data-percent="11", 
+                data-color="#FFB455",
+                data-font="24px",
+                style={height: 0}
+                )
+              .stack-chart-item.workshop(
+                data-percent="2", 
+                data-color="#569FD6",
+                data-font="18px",
+                style={height: 0}
+                )
+      
+            .benefic-chart-description 
+              .stack-description-item 
+                .num 0%
+                .text Announcement of 2nd Cycle 2023 and Q&A Webinar
+              .stack-description-item 
+                .num 0%
+                .text Kuwait University Scientific Research Conference - 2023 "Bridging Sciences Together: Innovation & Sustainability"
+              .stack-description-item 
+                .num 0%
+                .text 2nd Research and Poster Conference (MOH)
+              .stack-description-item 
+                .num 0%
+                .text Seminar call for proposal applications
+              .stack-description-item 
+                .num 0%
+                .text Results and Outcome for the Project: Effect of Reverse Osmosis Units' Brine Reject from Agricultural Farms in Kuwait on Groundwater Quality and Levels
+              .stack-description-item 
+                .num 0%
+                .text Medical and Dental Research Workshop
+                
+              
+            
+
+
+
+

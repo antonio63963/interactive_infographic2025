@@ -1,0 +1,80 @@
+@import "../../common/styles/constants.css";
+@import "../../common/styles/animation.css";
+
+.container-math-grant {
+  display: flex;
+  padding: 38px 0 60px 0;
+  
+}
+
+.mathGrant__graph-main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-left: clamp(20px, 6.1rem, 61px);
+
+  .binefic-row {
+    display: flex;
+    .binefic__chart-wrapper {
+      margin-right: 16px;
+
+      .binefic__chart-title {
+        margin-bottom: 29px;
+      }
+      .binefic__chart {
+        width: 226px;
+        height: 226px;
+        max-width: 226px;
+        max-height: 226px;
+      }
+    }
+
+    .binefic__list-item {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+      transition: all 1s ease-in-out;
+
+      .binefic__item-value {
+        display: block;
+        text-align: center;
+      }
+      .binefic__item-value {
+        width: 57px;
+        min-width: 50px;
+      }
+      .binefic__item-text {
+        margin-left: 24px;
+        line-height: 19.6px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* .gender {
+  margin: 52px 0;
+  .gender-title {
+    margin-bottom: 24px;
+  }
+  .gender-row {
+    display: flex;
+    .gender-svg-wrapper {
+      flex-shrink: 2;
+      .gender-svg {
+        object-fit: contain;
+        max-width: 100%;
+      }
+    }
+    .gender-row__col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-left: clamp(16px, 3.3rem, 33px);
+    }
+    .mathGender {
+      transition: all 1s ease-in-out;
+    }
+  }
+} */

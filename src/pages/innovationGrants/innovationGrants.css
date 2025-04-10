@@ -1,0 +1,112 @@
+@import "../../common/styles/constants.css";
+@import "../../common/styles/animation.css";
+
+.container-innovation-grant {
+  display: flex;
+  padding: 34px 0 32px 0;
+
+  .divider-vertical {
+    height: 458px;
+  }
+  .sidebar-vertical-item {
+    margin-top: 10px;
+    margin-bottom: 24px;
+  }
+}
+.innovation-grant-binefics {
+  margin: 12px clamp(20px, 10rem, 76px);
+  display: flex;
+  flex-direction: column;
+
+  .binefics-title {
+    margin-bottom: 24px;
+  }
+
+  .binefics-chart-graph {
+    display: flex;
+    align-items: center;
+    width: 390px;
+    max-width: 390px;
+
+    .bar {
+      position: relative;
+      height: 50px;
+      transform-origin: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--color-white);
+      }
+    }
+    .chart-first-bar {
+      background-color: var(--color-orange);
+      transition: all 1s linear;
+      margin-right: 8px;
+      width: 65%;
+    }
+    .chart-second-bar {
+      background-color: var(--color-blue);
+      transition: all 0.5s linear 1s;
+      width: 35%;
+    }
+  }
+  .binefics-chart-info {
+    margin-top: 22px;
+
+    .individ-label {
+      margin-top: 20px;
+    }
+  }
+  .gender-title {
+    margin: 51px 0 16px 0;
+  }
+  .gender-row {
+    display: flex;
+
+    .gender-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 24px;
+
+      .inno-grant-value {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-innovation-grant {
+    flex-direction: column;
+    align-items: center;
+
+    .divider-vertical {
+      height: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .innovation-grant-binefics {
+    .gender-row {
+      flex-direction: column;
+      align-items: center;
+
+      .gender-col {
+        margin-left: 0;
+      }
+    }
+  }
+}

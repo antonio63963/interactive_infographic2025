@@ -1,0 +1,334 @@
+@import "../../common/styles/constants.css";
+@import "../../common/styles/animation.css";
+
+.container-researchGrants {
+  width: var(--app-width);
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0 clamp(20px, 5rem, 50px);
+  padding-bottom: 67px;
+  padding-top: 50px;
+
+  /* sidebar */
+  .sidebar-research-grants {
+    padding: 0;
+    ul {
+      width: 180px;
+      min-width: 132px;
+      margin-right: 15px;
+    
+      .year, .text {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+      }
+      .text {
+        color: var(--color-orange);
+      }
+    }
+    .icons-row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .sidebar-horizontal-item {
+        width: 25%;
+        min-width: 25%;
+        padding: 0 6px;
+        margin-bottom: 48px;
+      }
+    }
+  }
+
+  .sidebar-horizontal-item {
+    width: 145px;
+  }
+  .sidebar-description-item:first-child {
+    font-weight: 700;
+    color: var(--color-blue);
+  }
+
+  /* Content row 1 */
+  .research-grants-institution {
+    display: flex;
+
+    .institution-title {
+      margin-bottom: 24px;
+    }
+    .institution-chart {
+      margin-left: 24px;
+
+      .research-grants-chart-item {
+        /* margin-bottom: 10px; */
+
+        .bar {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  /* Content row 2 */
+  .domain-title {
+    margin-top: 60px;
+  }
+  .domain-row {
+    margin-top: 40px;
+    display: flex;
+
+    .domain-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .domain-info {
+      display: flex;
+      flex-direction: column;
+      margin-right: 24px;
+      margin-bottom: 24px;
+
+      .domain-num {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-right: 12px;
+      }
+      .domain-text {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .custom-icon-cirle {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #ccc;
+  }
+
+  /* HIVE */
+  .domain-icons-hive {
+    /* overflow: hidden; */
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 293px;
+
+    .research-grants-icon-hive {
+      position: absolute;
+      transition: all 1s ease-in-out;
+    }
+
+    .research-grants-icon-hive.health {
+      top: 0;
+      left: 0;
+    }
+    .research-grants-icon-hive.energy {
+      left: 20%;
+      top: 20%;
+    }
+    .research-grants-icon-hive.environment {
+      left: 35%;
+      top: 35%;
+    }
+    .research-grants-icon-hive.other {
+      left: 50%;
+      top: 22%;
+    }
+    .research-grants-icon-hive.digital {
+      left: 58%;
+      top: 0;
+    }
+    .research-grants-icon-hive.food {
+      left: 70%;
+      top: 20%;
+    }
+    .research-grants-icon-hive.water {
+      left: 80%;
+      top: 15%;
+    }
+    .research-grants-icon-hive.education {
+      left: 90%;
+      top: 25%;
+    }
+
+    .research-grants-icon-hive.toTop {
+      top: 150%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-researchGrants {
+    .research-grants-institution {
+      flex-direction: column;
+      align-items: center;
+
+      .institution-chart {
+        margin-left: 0;
+      }
+    }
+  }
+  .domain-title {
+    text-align: center;
+  }
+  .container-researchGrants {
+    .domain-row {
+      flex-direction: column;
+      .domain-col,
+      .domain-info {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 792px) {
+  .sidebar-research-grants {
+    flex-direction: column;
+
+    ul {
+      margin-bottom: 32px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-researchGrants {
+    .research-grants-institution {
+      .institution-chart {
+        .research-grants-chart-item {
+          flex-direction: column-reverse;
+          align-items: start;
+
+          .description-row {
+            margin: 0;
+            margin-bottom: 3px;
+          }
+          .bar {
+            width: 100%;
+            max-width: 100%;
+            border-width: 3px 0 0 0;
+            padding-right: 10px;
+            padding-top: 0;
+            justify-content: flex-start;
+
+            .bar-fill {
+              transform-origin: left;
+            }
+          }
+        }
+      }
+    }
+    .domain-row {
+      .domain-col {
+        display: none;
+      }
+    }
+    .domain-icons-hive {
+      height: 493px;
+
+      .research-grants-icon-hive.health {
+        top: 0;
+        left: 10%;
+      }
+      .research-grants-icon-hive.energy {
+        left: 40%;
+        top: 20%;
+      }
+      .research-grants-icon-hive.environment {
+        left: 55%;
+        top: 15%;
+      }
+      /* 2row */
+      .research-grants-icon-hive.other {
+        left: 10%;
+        top: 62%;
+      }
+      .research-grants-icon-hive.digital {
+        left: 35%;
+        top: 72%;
+      }
+      .research-grants-icon-hive.food {
+        left: 65%;
+        top: 68%;
+      }
+      .research-grants-icon-hive.water {
+        left: 80%;
+        top: 15%;
+      }
+      .research-grants-icon-hive.education {
+        left: 80%;
+        top: 45%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-researchGrants {
+    .sidebar-research-grants {
+      .icons-row {
+        .sidebar-horizontal-item {
+          width: 50%;
+          min-width: 50%;
+        }
+      }
+    }
+    .research-grants-institution {
+      .institution-chart {
+        .research-grants-chart-item {
+          flex-direction: column-reverse;
+          align-items: start;
+
+          .description-row {
+            margin: 0;
+            margin-bottom: 3px;
+          }
+          .bar {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .domain-icons-hive {
+      height: 600px;
+
+      .research-grants-icon-hive.health {
+        top: 15%;
+        left: 0;
+        width: 155px;
+      }
+      .research-grants-icon-hive.energy {
+        left: 35%;
+        top: 35%;
+        width: 106px;
+      }
+      .research-grants-icon-hive.environment {
+        left: 55%;
+        top: 0%;
+        width: 119px;
+      }
+      /* 2row */
+      .research-grants-icon-hive.other {
+        left: 0%;
+        top: 62%;
+      }
+      .research-grants-icon-hive.digital {
+        left: 35%;
+        top: 75%;
+      }
+      .research-grants-icon-hive.food {
+        left: 78%;
+        top: 68%;
+      }
+      .research-grants-icon-hive.water {
+        left: 80%;
+        top: 45%;
+      }
+      .research-grants-icon-hive.education {
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

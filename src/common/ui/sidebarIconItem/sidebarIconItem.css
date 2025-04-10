@@ -1,0 +1,41 @@
+.sidebar-icon-item {
+  /* width: 170px; */
+  max-width: 170px;
+  /* max-width: 30%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease-in-out;
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 80px;
+    .sidebar-icon-icon {
+      object-fit: contain;
+      max-width: 100%;
+    }
+  }
+
+  .num {
+    margin-top: 10px;
+    font-size: clamp(20px, 10rem, 40px);
+    font-weight: 600;
+  }
+  .title {
+    font-size: 14px;
+    text-align: center;
+  }
+  .subtitle {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #8E8E8E;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+}

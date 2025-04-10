@@ -1,0 +1,69 @@
+
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/twoValuesRow/twoValuesRow.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/card/card.pug
+include ../../common/ui/labelWithColor/labelWithColor.pug
+
+
+mixin OrganizationalProjectsPage()
+  +popupPage({
+    title: 'Organizational Development Projects', 
+    closeClass: 'organizationalProjectsClose',
+    headerColor: '#FFE1D0',
+    buttonColor: '#FFCCAF'
+    })(class="organizationalProjectsPage")
+
+    .content-organizational-projects
+      .organizational-projects-labels 
+        +labelWithColor({color: '#7DC0F1', text: 'New Project in 2023'})(class="organizational-project-label")
+        +labelWithColor({color: '#FFB455', text: 'Ongoing Project'})(class="organizational-project-label")
+        +labelWithColor({color: '#F47D39', text: 'Completed Project'})
+      .container-organizationalProjects
+        +card({
+          canvasId: 'organizational-project-1', 
+          percent: '65%', 
+          color: '#FFB455', 
+          description: 'Databank Project', 
+          totalAmount: 'In-house',
+          totalText: 'Project Cost:'
+          })(class="organizational-data")
+          img(src=require('../../assets/svg/organizationalProjects/data.svg'))
+        +card({
+          canvasId: 'organizational-project-2', 
+          percent: '65%', 
+          color: '#f47d39', 
+          description: 'Gala Dinner (preparation)*', 
+          additionalDescription: '* Postponed due to the passing of HH the Amir',
+          totalAmount: '30K',
+          totalText: 'Project Cost:'
+          })(class="organizational-dinner")
+          img(src=require('../../assets/svg/organizationalProjects/dinner.svg'))
+        +card({
+          canvasId: 'organizational-project-3', 
+          percent: '89%', 
+          color: '#FFB455', 
+          description: 'Centralized automation Solution for KFAS (Finance & HR)', 
+          totalAmount: '100K',
+          totalText: 'Project Cost:'
+          })(class="organizational-automatic")
+          img(src=require('../../assets/svg/organizationalProjects/automatic.svg'))
+        +card({
+          canvasId: 'organizational-project-4', 
+          percent: '95%', 
+          color: '#FFB455', 
+          description: 'Health & Safety Project Plan', 
+          totalAmount: '10K',
+          totalText: 'Project Cost:'
+          })(class="organizational-heart")
+          img(src=require('../../assets/svg/organizationalProjects/heart.svg'))
+          //- second row
+        +card({
+          canvasId: 'organizational-project-5', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'KFAS Whatsapp Service Tool', 
+          totalAmount: 'In-house',
+          totalText: 'Project Cost:'
+          })(class="organizational-whatsapp")
+          img(src=require('../../assets/svg/organizationalProjects/whatsapp.svg'))

@@ -1,0 +1,62 @@
+
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/twoValuesRow/twoValuesRow.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+include ./components/bineficLogoChart/bineficLogoChart.pug
+include ../../common/ui/genderChart/genderChart.pug
+
+mixin MathCurationPage()
+  +popupPage({
+    title: 'Math and Science Education - Curation', 
+    closeClass: 'mathCurationClose',
+    headerColor: '#d6edff',
+    buttonColor: '#b4dfff'
+    })(class="mathCurationPage")
+    
+    .container-math-curation 
+      .sidebar-vertical.sidebar-three-items
+        +sidebarIconItem({
+          num: 14, 
+          title: 'Events', 
+          color: '#569FD6', 
+          icon: 'folderStarBlue'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: 937, 
+          title: 'Beneficiaries', 
+          color: '#569FD6', 
+          icon: 'persons'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: '137k', 
+          title: 'KD Amount Approved', 
+          color: '#569FD6', 
+          icon: 'kdBlue'
+          })(class="sidebar-vertical-item moveToRight")
+        //- img.sidebar__img.moveToRight(src=require('../../assets/svg/mathCuration/events.svg'))
+        //- img.sidebar__img.moveToRight(src=require('../../assets/svg/mathCuration/binefic.svg'))
+        //- img.sidebar__img.moveToRight(src=require('../../assets/svg/mathCuration/amount.svg'))
+      .divider-vertical 
+
+      .content-math-curation 
+        h2.binefic-title Beneficiaries
+        .content-row 
+          +bineficLogoChart({title: 'KFAS', title2: 'STEAM Day', amount: 440, amountStyle: 'orangeStyle', canvasId: 'binefic_1'})
+            img.bineficImg(src=require('../../assets/svg/mathCuration/kfas.svg'))
+          +bineficLogoChart({title: 'Google Certified', title2: 'Educator Training', amount: 248, amountStyle: 'orangeStyle', canvasId: 'binefic_2'})
+            img.bineficImg(src=require('../../assets/svg/mathCuration/google.svg'))
+          +bineficLogoChart({title: 'Maharaat', title2: 'Camp', amount: 147, amountStyle: 'orangeStyle', canvasId: 'binefic_4'})
+            img.bineficImg-camp(src=require('../../assets/svg/mathCuration/camp.svg'))
+          +bineficLogoChart({title: 'Metaverse', title2: 'Hackathon', amount: 88, amountStyle: 'light-orange-style', canvasId: 'binefic_3'})
+            img.bineficImg(src=require('../../assets/svg/mathCuration/hackathon.svg'))
+          +bineficLogoChart({title: 'Korean', title2: 'STEM Trip', amount: 14, amountStyle: 'blue-style ', canvasId: 'binefic_5'})
+            img.bineficImg(src=require('../../assets/svg/mathCuration/stem.svg'))
+        .content-row.gender-row 
+          h2 Gender Breakdown
+          .gender-info 
+            +genderChart({man: 63, woman: 37, canvasId: 'gender_1'})
+            .gender-info-col 
+              +twoValuesRow({val1: 40, isOrange: false})(class="male-info moveUp")
+              +twoValuesRow({val1: 60, isOrange: true})(class="male-info moveUp")
+

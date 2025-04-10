@@ -1,0 +1,11 @@
+mixin mainScreenCard(options)
+  -const {color, title} = options || {};
+  section.main-screen-card(style={'background-color': color}, class!= attributes.class)
+    h2= title
+    block
+    .icon-more 
+      .dot 
+      .dot 
+      .dot
+
+

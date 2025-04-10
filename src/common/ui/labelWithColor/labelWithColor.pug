@@ -1,0 +1,5 @@
+mixin labelWithColor(options)
+  -const {text, color} = options || {};
+  .labelWithColor(class!= attributes.class)
+    .labelWithColor-square(style={'background-color': color})
+    span.labelWithColor-text= text

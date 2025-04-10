@@ -1,0 +1,43 @@
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/doubleValuesBar/doubleValuesBar.pug
+
+
+
+
+mixin ResearchCapacityPage()
+  +popupPage({
+    title: 'Research- Capacity Building Grants', 
+    closeClass: 'researchCapacityClose',
+    headerColor: '#FFE4C1',
+    buttonColor: '#FFCF90'
+    })(class="researchCapacityPage")
+
+    .container-research-capacity 
+
+      .research-capacity-content
+        h2 Capacity Building Program Applications
+        .legend-row 
+          +labelWithColor({color: '#F47D39', text: 'Received'})
+          +labelWithColor({color: '#7DC0F1', text: 'Approved'})
+        .capacity-chart 
+          .capacity-chart-description 
+            span.capacity-description-item Scientific Missions
+            span.capacity-description-item Scholarship & Bridging Programs
+            span.capacity-description-item Training Grants
+            span.capacity-description-item Supplementary Funds
+          .chart-graph 
+            .description-mobile Scientific Missions
+            +doubleValuesBar({val1: 86, val2: 29})(class="chart-item")
+            .description-mobile Scholarship & Bridging Programs
+            +doubleValuesBar({val1: 35, val2: 5})(class="chart-item")
+            .description-mobile Training Grants
+            +doubleValuesBar({val1: 6, val2: 4})(class="chart-item")
+            .description-mobile Supplementary Funds
+            +doubleValuesBar({val1: 3, val2: 2})(class="chart-item")
+
+
+
+
+

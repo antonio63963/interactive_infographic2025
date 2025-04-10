@@ -1,0 +1,39 @@
+.lineWithDotInfo {
+  position: absolute;
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+
+  .text {
+    font-size: 14px;
+    line-height: 19.6px;
+    width: 85%;
+  }
+  .line-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .line {
+      border: 1px solid #BCBCBC;
+      border-width: 0 0 1px 0;
+      flex-grow: 5;
+    }
+    .dot {
+      width: 8px;height: 8px;
+      background-color: #fff;
+      border-radius: 100%;
+      border: 1px solid #BCBCBC;
+    }
+  }
+
+}
+
+.reverse {
+  align-items: flex-end;
+
+  .text {
+    text-align: end;
+  }
+}

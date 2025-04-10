@@ -1,0 +1,82 @@
+
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/prizeLabel/prizeLabel.pug
+include ../../common/ui/prizeRow/prizeRow.pug
+
+
+mixin PrizesWinnersPage()
+  +popupPage({
+    title: '2022 Prize Winners Announcement',
+    closeClass: 'prizesWinnersClose',
+    headerColor: '#D6EDFF',
+    buttonColor: '#B4DFFF'
+    })(class="prizesWinnersPage")
+
+    .container-prizesWinners
+      section.prize-section 
+        +prizeLabel({
+        title: 'Jaber Al-Ahmed Prize 2022 winners',
+        color: '#569FD6',
+        })
+        +prizeRow({
+          person: 'Dr. Dari AI Huwail',
+          jobTitle: 'Natural Sciences and Mathematics'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Yousef AI Osairi',
+          jobTitle: 'Engineering Sciences'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Mohammad Jamal',
+          jobTitle: 'Medical Sciences and Allied Health Sciences'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Abdullah AI Shebli',
+          jobTitle: 'Social Sciences and Humanities'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Abdullah Sultan',
+          jobTitle: 'Administration and Economics'
+        })(class="prize-person")
+      //- 2 section
+      section.prize-section 
+        +prizeLabel({
+        title: 'Al-Sumait Prize 2022 winners',
+        color: '#F47D39',
+        })
+        +prizeRow({
+          person: 'Dr. Catherine Nakalembe',
+          jobTitle: 'Food Security'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Aggrey Ambali',
+          jobTitle: 'Food Security'
+        })(class="prize-person")
+      //- 3 section  
+      section.prize-section 
+        +prizeLabel({
+        title: 'Kuwait Prize 2022 winners',
+        color: '#FFB455',
+        })
+        +prizeRow({
+          person: 'Professor Fowzan Al Kuraya',
+          jobTitle: 'Fundamental Sciences'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Professor Dr. Said Yaktine',
+          jobTitle: 'Humanities, arts and Literature'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Professor Dr. Khalil Amine',
+          jobTitle: 'Fundamental Sciences'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Elie Tamer',
+          jobTitle: 'Economics and Social Sciences'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Professor Mohamed Mattoussi',
+          jobTitle: 'Emerging Interdisciplinary Sciences'
+        })(class="prize-person")
+        

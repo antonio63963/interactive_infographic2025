@@ -1,0 +1,83 @@
+
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/twoValuesRow/twoValuesRow.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/card/card.pug
+include ../../common/ui/labelWithColor/labelWithColor.pug
+
+
+mixin AssignedProjectsPage()
+  +popupPage({
+    title: 'Assigned Projects', 
+    closeClass: 'assignedProjectsClose',
+    headerColor: '#FFE1D0',
+    buttonColor: '#FFCCAF'
+    })(class="assignedProjectsPage")
+
+    .content-assigned-projects
+      .assigned-projects-labels 
+        +labelWithColor({color: '#7DC0F1', text: 'New Project in 2023'})(class="assigned-project-label")
+        +labelWithColor({color: '#FFB455', text: 'Ongoing Project'})(class="assigned-project-label")
+        +labelWithColor({color: '#F47D39', text: 'Completed Project'})
+      .container-assignedProjects
+        +card({
+          canvasId: 'assigned-project-1', 
+          percent: '10%', 
+          color: '#7DC0F1', 
+          description: 'Feasibility study to Establish a Factory to Produce Camel Milk and its Derivatives', 
+          totalAmount: '49K'
+          })(class="assigned-camel")
+          img(src=require('../../assets/svg/assignedProjects/camel.svg'))
+        +card({
+          canvasId: 'assigned-project-2', 
+          percent: '95%', 
+          color: '#FFB455', 
+          description: 'Develop a Plan for Establishing the National Space Research Center of Kuwait (NSRCK)', 
+          totalAmount: '31K'
+          })(class="assigned-space")
+          img(src=require('../../assets/svg/assignedProjects/space.svg'))
+        +card({
+          canvasId: 'assigned-project-3', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Extension of Kuwait Energy Outlook Leap Model to Address Economic Perspective', 
+          totalAmount: '8.5K'
+          })(class="assigned-energy")
+          img(src=require('../../assets/svg/assignedProjects/energy.svg'))
+        +card({
+          canvasId: 'assigned-project-4', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Study of the Requirements for Security and Safety Standards for Air Conditioning and Refrigeration Devices Used for Flammable Cooling in the State of Kuwait', 
+          totalAmount: '25K'
+          })(class="assigned-secure")
+          img(src=require('../../assets/svg/assignedProjects/secure.svg'))
+          //- second row
+        +card({
+          canvasId: 'assigned-project-5', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Energy Transition White Paper', 
+          totalAmount: '5K'
+          })(class="assigned-transition")
+          img(src=require('../../assets/svg/assignedProjects/transition.svg'))
+        +card({
+          canvasId: 'assigned-project-6', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Egeria Nifaia Investigating the Effect of Different Mixtures of Plastic Solid Waste Feedstock on Pyro-Products', 
+          totalAmount: '28K'
+          })(class="assigned-trash")
+          img(src=require('../../assets/svg/assignedProjects/trash.svg'))
+        +card({
+          canvasId: 'assigned-project-7', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Implementation Study of Solar PV Systems on KFH Branches Rooftops', 
+          totalAmount: '5K',
+          fontSizeDescription: '12px'
+          })(class="assigned-house")
+          img(src=require('../../assets/svg/assignedProjects/house.svg'))
+      
+        
+

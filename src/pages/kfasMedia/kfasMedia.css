@@ -1,0 +1,56 @@
+@import "../../common/styles/constants.css";
+@import "../../common/styles/animation.css";
+
+.container-kfas-media {
+  width: var(--app-width);
+  max-width: 100vw;
+  padding: 67px 20px 82px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .socials-tabs {
+    display: flex;
+    width: 770px;
+    max-width: 100%;
+
+    .kfas-media-tab {
+      margin-right: 5px;
+      width: 20%;
+    }
+    .kfas-media-tab:last-child {
+      margin-right: 0;
+    }
+  }
+
+  #inst-clip,
+  #x-clipj,
+  #in-clip {
+    width: 100%;
+  }
+
+  .socials-chart {
+    margin-top: 56px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .canvas-wrapper {
+      width: 650px;
+      height: 240px;
+      max-width: 100%;
+      margin-bottom: 60px;
+
+      #socials-chart {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .description-row {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+mixin organizationalColumn(options)
+  -const {title, num, numVirtual, step, }= options || {};
+  - const virtualValue = numVirtual ? numVirtual : 1;
+  section.organizational-column(class!= attributes.class)
+    .title-row 
+      block
+      h2.organizational-column-title= title 
+    .num-row 
+      span.num.anime-text(data-value= num, data-step= step) 0
+      .text physical
+    .num-row 
+      span.num= virtualValue
+      .text virtual

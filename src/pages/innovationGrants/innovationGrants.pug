@@ -1,0 +1,65 @@
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+include ../../common/ui/labelWithColor/labelWithColor.pug
+include ../../common/ui/genderChart/genderChart.pug
+include ../../common/ui/twoValuesRow/twoValuesRow.pug
+
+
+mixin InnovationGrantPage()
+  +popupPage({
+    title: 'Innovation and Enterprise - Professional Certificate Grants',
+     closeClass: 'innovationGrantClose',
+     headerColor: '#FFE4C1',
+     buttonColor: '#FFCF90'
+     })(class="innovationGrantPage")
+     
+    .container-innovation-grant 
+      .sidebar-vertical.sidebar-three-items 
+        +sidebarIconItem({
+          num: 85, title: 'Applications Requested', 
+          color: '#F36D20', 
+          icon: 'personInputOrange'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: 31, 
+          title: 'Grants Provided', 
+          color: '#F36D20', icon: 'personCheckedOrange'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: '21.4k', 
+          title: 'KD Amount', 
+          color: '#F36D20', 
+          icon: 'kdOrange'
+          })(class="sidebar-vertical-item moveToRight")
+      .divider-vertical 
+
+      .innovation-grant-binefics 
+        h2.binefics-title Number of Beneficiaries
+        .binefics-chart
+          .binefics-chart-graph
+            .chart-first-bar.bar.scaleX
+              span.binefics-through
+            .chart-second-bar.bar.scaleX
+              span.binefics-individ
+          .binefics-chart-info
+            +labelWithColor({
+              color: '#F47D39',
+              text: 'Through their organiztion'
+            })
+            +labelWithColor({
+              color: '#69AADB',
+              text: 'Applied Individually (students, graduates, etc)'
+            })(class="individ-label")
+
+        h2.gender-title Gender Distribution
+        .gender-row
+          +genderChart({canvasId: "innovation-grants-gender-1"})
+          .gender-col
+            +twoValuesRow({val1: '63', isOrange: false})(class="inno-grant-value")
+            +twoValuesRow({val1: '37', isOrange: true})(class="inno-grant-value")
+
+
+
+
+

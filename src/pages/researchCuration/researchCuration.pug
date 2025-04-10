@@ -1,0 +1,65 @@
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/labelWithColor/labelWithColor.pug
+include ../../common/ui/lineWithDotInfo/lineWithDotInfo.pug
+
+
+mixin ResearchCurationPage()
+  +popupPage({
+    title: 'Research - Capacity Building Curations', 
+    closeClass: 'researchCurationClose',
+    headerColor: '#D6EDFF',
+    buttonColor: '#B4DFFF'
+    })(class="researchCurationPage")
+
+    .container-researchCuration 
+      .sidebar-vertical(class="sidebar-research-curation sidebar-three-items")
+        +sidebarIconItem({
+          num: 11, 
+          title: 'Events',
+          color: '#569FD6', 
+          icon: 'folderStarBlue'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: 548, 
+          title: 'Beneficiaries',
+          color: '#569FD6', 
+          icon: 'persons'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: '64k', 
+          title: 'KD Amount Approved',
+          color: '#569FD6', 
+          icon: 'kdBlue'
+          })(class="sidebar-vertical-item moveToRight")
+      .divider-vertical
+
+      .research-curation-content 
+        h2.research-curation-title Beneficiaries 
+        .chart 
+          .research-curation-binefic-graph
+            .item-s-cur.scaleX.communicating
+            .item-s-cur.scaleX.scopus
+            .item-s-cur.scaleX.public
+            .item-s-cur.scaleX.gpt 
+            .item-s-cur.scaleX.ai
+            .item-s-cur.scaleX.unep
+            .item-s-cur.scaleX.medical
+            .item-s-cur.scaleX.april
+            .item-s-cur.scaleX.doctors
+            .item-s-cur.scaleX.octobor
+            .item-s-cur.scaleX.cv
+          .research-curation-binefic-info
+            +barChartItem({title: 'Communicating your science to the Public', num: 141,  percent: '100%'})
+            +barChartItem({title: 'Scopus Research profiles', num: 115,  percent: '81%'})
+            +barChartItem({title: 'Public Talk: Big Data & AI in Scientific Research', num: 61,  percent: '43%'})
+            +barChartItem({title: 'Chart GPT Lecture', num: 60,  percent: '43%'})
+            +barChartItem({title: 'Enrich your research using AI', num: 40,  percent: '28%'})
+            +barChartItem({title: 'UNEP- Strategic Foresight Regional Workshop', num: 36,  percent: '25%'})
+            +barChartItem({title: 'Medical and Dental Research Course and Workshop', num: 29,  percent: '20%'})
+            +barChartItem({title: 'Renewables Academy Online - April', num: 18,  percent: '13%'})
+            +barChartItem({title: 'Biochemistry Board Doctors', num: 18,  percent: '13%'})
+            +barChartItem({title: 'Renewables Academy Online - Octobor', num: 18,  percent: '13%'})
+            +barChartItem({title: 'Scientific CV writing workshop for the student training program at CERN 2024', num: 12,  percent: '8%', titleClass: 'short-title'})
+

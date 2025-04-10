@@ -1,0 +1,19 @@
+.chart-info {
+  display: flex;
+  align-items: center;
+
+  .chart-info-value {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+
+    .chart-info-digit {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .chart-info-text {
+      font-size: 16px;
+      margin-left: 8px;
+    }
+  }
+}

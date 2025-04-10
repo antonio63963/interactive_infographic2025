@@ -1,0 +1,18 @@
+mixin organizationalRow(options)
+  - const {num, title, subtitle, step, isPercent, num2, title2, isPercent2} = options || {};
+  - const numIsPercent = isPercent ? 1 : 0;
+  - const numIsPercent2 = isPercent2 ? 1 : 0;
+
+  section.organizational-row(class!= attributes.class)
+    .image-wrapper
+      block
+    .text-content-col
+      .text-content
+        .amount.anime-text(data-value= num, data-step= step, data-percent= numIsPercent) 0
+        .col 
+          h2.title= title
+          span.subtitle= subtitle
+      if num2 && title2 
+        .text-content
+          .amount.anime-text(data-value= num2, data-step= step, data-percent= numIsPercent2) 0
+          h2.title-second-row= title2

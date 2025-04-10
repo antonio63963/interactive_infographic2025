@@ -1,0 +1,15 @@
+.labelWithColor {
+  display: flex;
+  align-items: center;
+
+  .labelWithColor-square {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+  }
+  .labelWithColor-text {
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+}

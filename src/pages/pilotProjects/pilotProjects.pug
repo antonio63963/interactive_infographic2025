@@ -1,0 +1,89 @@
+
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/twoValuesRow/twoValuesRow.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/card/card.pug
+include ../../common/ui/labelWithColor/labelWithColor.pug
+
+
+mixin PilotProjectsPage()
+  +popupPage({
+    title: 'Pilot Projects', 
+    closeClass: 'pilotProjectsClose',
+    headerColor: '#FFE1D0',
+    buttonColor: '#FFCCAF'
+    })(class="pilotProjectsPage")
+    .content-pilot-projects
+      .pilot-projects-labels 
+        +labelWithColor({color: '#7DC0F1', text: 'New Project in 2023'})(class="pilot-project-label")
+        +labelWithColor({color: '#FFB455', text: 'Ongoing Project'})(class="pilot-project-label")
+        +labelWithColor({color: '#F47D39', text: 'Completed Project'})
+      .container-pilotProjects
+        +card({
+          canvasId: 'pilot-project-1', 
+          percent: '10%', 
+          color: '#7DC0F1', 
+          description: 'A New Electric Vehicle Fast Charger with Integrated Distributed Generators', 
+          totalAmount: '49.7K'
+          })(class="pilot-electric")
+          img(src=require('../../assets/svg/pilotProjects/electric.svg'))
+        +card({
+          canvasId: 'pilot-project-2', 
+          percent: '50%', 
+          color: '#7DC0F1', 
+          description: 'Green Valorization of 100% food waste in Kuwait as a renewable energy source using anaerobic digestion', 
+          totalAmount: '8.66K'
+          })(class="pilot-green")
+          img(src=require('../../assets/svg/pilotProjects/green.svg'))
+        +card({
+          canvasId: 'pilot-project-3', 
+          percent: '80%', 
+          color: '#FFB455', 
+          description: 'Kyphoplasty Biodegradable Kyphoplasty Balloon System Design and First in Man Study', 
+          totalAmount: '295K'
+          })(class="pilot-bio")
+          img(src=require('../../assets/svg/pilotProjects/bio.svg'))
+        +card({
+          canvasId: 'pilot-project-4', 
+          percent: '80%', 
+          color: '#FFB455', 
+          description: 'Design KFAS Terrace made of recycled tires-Phase I', 
+          totalAmount: '9.5K'
+          })(class="pilot-kfas")
+          img(src=require('../../assets/svg/pilotProjects/kfas.svg'))
+          //- second row
+        +card({
+          canvasId: 'pilot-project-5', 
+          percent: '80%', 
+          color: '#FFB455', 
+          description: 'Kuwait University CubeSat 1', 
+          totalAmount: '316K'
+          })(class="pilot-university")
+          img(src=require('../../assets/svg/pilotProjects/university.svg'))
+        +card({
+          canvasId: 'pilot-project-6', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Development of Low Cost Micro Solar Still', 
+          totalAmount: '43.1K'
+          })(class="pilot-solar")
+          img(src=require('../../assets/svg/pilotProjects/solar.svg'))
+        +card({
+          canvasId: 'pilot-project-7', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Utilization of Industrially Produced Carbon Dioxide in Protected Horticulture Facilities for Food Security Enhancement and Contribution to Climate Change Mitigation', 
+          totalAmount: '66K',
+          fontSizeDescription: '12px'
+          })(class="pilot-co")
+          img(src=require('../../assets/svg/pilotProjects/co.svg'))
+        +card({
+          canvasId: 'pilot-project-8', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Consulting Service for Solar PV Integrated in Buildings', 
+          totalAmount: '84K'
+          })(class="pilot-service")
+          img(src=require('../../assets/svg/pilotProjects/service.svg'))
+        
+

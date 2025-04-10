@@ -1,0 +1,176 @@
+@import "./fonts.css";
+@import "./constants.css";
+@import "./animation.css";
+@import "../ui/appHeaderDetails/appHeaderDetails.css";
+@import "../ui/sidebarIconItem/sidebarIconItem.css";
+@import "../ui/sidebarHorizontal/sidebarHorizontal.css";
+@import "../ui/twoValuesRow/twoValuesRow.css";
+@import "../ui/chart_info_icons/chart_info_icons.css";
+@import "../ui/genderBreakdown/genderBreakdown.css";
+@import "../ui/card/card.css";
+@import "../ui/labelWithColor/labelWithColor.css";
+@import "../ui/appTab/appTab.css";
+@import "../ui/barChartItem/barChartItem.css";
+@import "../ui/fillBarItem/fillBarItem.css";
+@import "../ui/iconHiveItem/iconHiveItem.css";
+@import "../ui/lineWithDotInfo/lineWithDotInfo.css";
+@import "../ui/doubleValuesBar/doubleValuesBar.css";
+@import "../ui/prizeLabel/prizeLabel.css";
+@import "../ui/prizeRow/prizeRow.css";
+@import "../ui/mainScreenCard/mainScreenCard.css";
+@import "../ui/smallPrizeRow/smallPrizeRow.css";
+@import "../ui/bigNumWithTitle/bigNumWithTitle.css";
+@import "../ui/organizationalRow/organizationalRow.css";
+@import "../ui/organizationalColumn/organizationalColumn.css";
+
+@import "../../pages/assignedProjects/assignedProjects.css";
+@import "../../pages/engagementScience/engagementScience.css";
+@import "../../pages/financialAchivements/financialAchivements.css";
+@import "../../pages/innovationCurations/innovationCurations.css";
+@import "../../pages/innovationGrants/innovationGrants.css";
+@import "../../pages/kfasMedia/kfasMedia.css";
+@import "../../pages/mathCuration/mathCuration.css";
+@import "../../pages/mathGrants/mathGrants.css";
+@import "../../pages/organizationalAchivements/organizationalAchivements.css";
+@import "../../pages/organizationalProjects/organizationalProjects.css";
+@import "../../pages/pilotProjects/pilotProjects.css";
+@import "../../pages/policyGrants/policyGrants.css";
+@import "../../pages/privateSectorProjects/privateSectorProjects.css";
+@import "../../pages/prizesWinners/prizesWinners.css";
+@import "../../pages/researchCapacity/researchCapacity.css";
+@import "../../pages/researchCuration/researchCuration.css";
+@import "../../pages/researchGrants/researchGrants.css";
+@import "../../pages/researchNetworking/researchNetworking.css";
+@import "../../pages/scienceCuration/scienceCuration.css";
+@import "../../pages/scienceGrants/scienceGrants.css";
+@import "../../pages/policyPapers/policyPapers.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(1vw / 10.4 * 9);
+  font-family: "Arabic";
+  color: var(--color-black);
+  height: 100vh;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: Arabic;
+  font-weight: 600;
+  font-size: clamp(20px, 2.4rem, 24px);
+  white-space: wrap;
+}
+h2 {
+  font-family: Arabic;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+p {
+  line-height: 19.6px;
+}
+
+.main {
+  width: 100%;
+  max-width: var(--app-width);
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.large-num {
+  font-size: 40px;
+  color: var(--color-orange);
+  font-weight: 700;
+}
+.big-num {
+  font-size: 24px;
+  color: var(--color-orange-l);
+  font-weight: 700;
+}
+.middle-num {
+  font-size: 18px;
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+.sidebar-vertical {
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 20px;
+}
+.sidebar-vertical-item {
+  margin-top: 60px;
+}
+
+.divider-vertical {
+  height: 100%;
+  border: 1px solid var(--color-grey-l);
+  height: 630px;
+  /* margin-top: 24px;
+  margin-bottom: 60px; */
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar-three-items.sidebar-icon-item {
+    width: 30%;
+  }
+  .divider-vertical {
+    height: 1px;
+    width: 90%;
+    max-width: 90vw;
+    margin: 0 clamp(20px, 5rem, 50px);
+  }
+  .sidebar-vertical {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+  .sidebar-vertical.sidebar-three-items {
+    .sidebar-vertical-item {
+      width: 40%;
+    }
+  }
+
+  .sidebar-vertical > img {
+    /* margin: 40px 0; */
+    max-width: 30%;
+  }
+  .sidebar-vertical-item {
+    margin: 42px 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    text-align: center;
+  }
+  .sidebar-vertical-item {
+    margin: 32px 12px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .sidebar-three-items.sidebar-vertical,
+  .sidebar-three-items.sidebar-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+}

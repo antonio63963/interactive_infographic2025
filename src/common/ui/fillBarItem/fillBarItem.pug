@@ -1,0 +1,8 @@
+mixin fillBarItem(options)
+  -const {num, text, fillPercent} = options || {};
+  .fill-bar-item(class!= attributes.class)
+    .bar
+      .bar-fill(data-width=fillPercent)
+    .description-row 
+      .num-description= num  
+      p.text-description= text

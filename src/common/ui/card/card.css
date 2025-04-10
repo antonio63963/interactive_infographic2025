@@ -1,0 +1,75 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px clamp(16px, 2.2rem, 22px);
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 244px;
+  height: 353px;
+  width: 25%;
+
+  .card-canvas-wrapper {
+    position: relative;
+    width: 140px;
+    max-width: 140px;
+    height: 140px;
+
+    .cover-layer {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .card-column {
+        padding-top: 10px;
+        height: 78px;
+        max-height: 78px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card-digit {
+          margin-top: 10px;
+          font-size: 26px;
+          line-height: 26px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .card-description-wrapper {
+    height: 105px;
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 10px;
+
+    .card-description {
+      font-size: 14px;
+      line-height: 19.6px;
+      text-align: center;
+    }
+    .card-additionalDescription {
+      font-size: 14px;
+      line-height: 19.6px;
+      text-align: center;
+      color: #8c8c8c;
+      margin-top: 20px;
+    }
+  }
+  .card-total-text {
+    font-size: 12px;
+    line-height: 19.6px;
+    margin-right: 5px;
+  }
+  .card-total-amount {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

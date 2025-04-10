@@ -1,0 +1,16 @@
+mixin card(options) 
+  -const {percent, color, canvasId, description, totalText, totalAmount, fontSizeDescription, additionalDescription} = options || {};
+  .card(class!= attributes.class)
+    .card-canvas-wrapper 
+      canvas(id= canvasId)
+      .cover-layer 
+        .card-column 
+          block
+          span.card-digit(style={'color': color})= percent 
+    .card-description-wrapper     
+      p.card-description(style={"font-size": fontSizeDescription, "line-height": '16.8px' })= description || ''
+      if(additionalDescription)
+        p.card-additionalDescription= additionalDescription
+    .card-total-row 
+      span.card-total-text= totalText || 'KFAS contribution:' 
+      span.card-total-amount= totalAmount

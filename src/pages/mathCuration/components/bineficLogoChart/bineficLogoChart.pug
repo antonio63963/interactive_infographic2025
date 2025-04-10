@@ -1,0 +1,11 @@
+
+mixin bineficLogoChart(options) 
+  -const {title, title2, amount, amountStyle, canvasId} = options || {};
+  .bineficLogoChart(class!= attributes.class)
+    .canvas-wrapper 
+      .wrapper-logo
+        block
+      canvas(id= canvasId)
+    span.amount(class= amountStyle)= amount 
+    span.title1= title
+    span.title2= title2

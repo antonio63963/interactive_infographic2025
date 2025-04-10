@@ -1,0 +1,16 @@
+mixin smallPrizeRow(options)
+  -const {color, title} = options || {};
+  -let customColor = '#FFAA4D';
+  - if(color == "blue") customColor = '#569FD6'
+  - else if (color == 'orange') customColor = '#F47D39'
+
+  .small-prize-row(class!= attributes.class) 
+    .icon-wrapper
+      if color == 'blue'
+        img(src=require('../../assets/svg/mainScreen/prizeSmallBlue.svg'))
+      else if color == 'orange'
+        img(src=require('../../assets/svg/mainScreen/prizeSmallOrange.svg'))
+      else
+        img(src=require('../../assets/svg/mainScreen/prizeSmallYellow.svg'))
+    .filled-block(style={'background-color': customColor})
+      p.text= title

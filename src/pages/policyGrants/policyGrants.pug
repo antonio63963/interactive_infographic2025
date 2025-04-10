@@ -1,0 +1,50 @@
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/sidebarHorizontal/sidebarHorizontal.pug
+include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+
+mixin PolicyGrantPage()
+  +popupPage({
+    title: 'Policy Research Grants', 
+    closeClass: 'policyGrantClose',
+    headerColor: '#FFE4C1',
+    buttonColor: '#FFCF90'
+    })(class="policyGrantPage")
+
+    .container-policy-grants  
+      +sidebarHorizontal()(class="policyGrant__sidebar sidebar-three-items")  
+        +sidebarIconItem({
+          num: 9, 
+          title: 'Proposals Received', 
+          color: '#F47D39', 
+          icon: 'folderStarOrange'
+          })(class="sidebar-vertical-item policy-grant-icon moveToRight")
+        +sidebarIconItem({
+          num: '3*', 
+          title: 'Proposals Approved',
+          subtitle: '*Includes proposals from previous cycles', 
+          color: '#F47D39', 
+          icon: 'personCheckedOrange'
+          })(class="sidebar-vertical-item policy-grant-icon moveToRight")
+        +sidebarIconItem({
+          num: '27.1k', 
+          title: 'KD Amount Approved', 
+          color: '#F47D39', 
+          icon: 'kdOrange'
+          })(class="sidebar-vertical-item policy-grant-icon moveToRight")
+
+      .content-policy-grant 
+        img.policy-grant-icon.moveToRight(src=require('../../assets/svg/policyGrants/domain.svg'))
+        .policy-grant-col 
+          h2.col-title Applications Breakdown domain
+          ul.domains-list
+            li.domain-item.moveUp
+              .dot 
+              p.domain-item-text Kuwait Energy Outlook - Building an Online Energy Planning Dashboard
+            li.domain-item.moveUp
+              .dot 
+              p.domain-item-text Preparing engineers for the sustainable future: embedding the new Kuwait 2035 vision into engineering
+            li.domain-item.moveUp
+              .dot 
+              p.domain-item-text Development of a National Prescribing Competency Framework for Kuwait
+                

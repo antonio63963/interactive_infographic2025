@@ -1,0 +1,33 @@
+.main-screen-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 9px;
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .icon-more {
+    margin-top: 10px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .5s ease-in-out;
+
+    .dot {
+      background-color: #807261;
+      border-radius: 100%;
+      width: 6px;height: 6px;
+      min-width: 6px;
+    }
+  }
+  .icon-more:hover {
+    opacity: .5;
+  }
+}

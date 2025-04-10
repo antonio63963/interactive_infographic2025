@@ -1,0 +1,6 @@
+mixin appTab(options)
+  -const {id, activeColor} = options || {};
+  .app-tab(class!= attributes.class, id= id, data-color=activeColor) 
+    .icon-wrapper 
+      block
+    .marker 

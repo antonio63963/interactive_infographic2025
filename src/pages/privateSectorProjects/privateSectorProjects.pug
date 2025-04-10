@@ -1,0 +1,39 @@
+
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/twoValuesRow/twoValuesRow.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/card/card.pug
+include ../../common/ui/labelWithColor/labelWithColor.pug
+
+
+mixin PrivateSectorProjectsPage()
+  +popupPage({
+    title: 'Private Sector Projects', 
+    closeClass: 'privateSectorProjectsClose',
+    headerColor: '#FFE1D0',
+    buttonColor: '#FFCCAF'
+    })(class="privateSectorProjectsPage")
+
+    .content-privateSector-projects
+      .privateSector-projects-labels 
+        +labelWithColor({color: '#F47D39', text: 'Completed Project'})
+      .container-privateSectorProjects
+        +card({
+          canvasId: 'privateSector-project-1', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Development of a new range of No Added Sugar products', 
+          totalAmount: '45K'
+          })(class="privateSector-dev")
+          img(src=require('../../assets/svg/privateSectorProjects/dev.svg'))
+        +card({
+          canvasId: 'privateSector-project-2', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Beyond Organic Vertical Farm', 
+          totalAmount: '45K'
+          })(class="privateSector-organic")
+          img(src=require('../../assets/svg/privateSectorProjects/organic.svg'))
+
+
+

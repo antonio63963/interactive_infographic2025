@@ -1,0 +1,46 @@
+.fill-bar-item {
+  display: flex;
+  align-items: center;
+  max-width: 90vw;
+  
+  .bar {
+    padding: 10px 0;
+    border: 3px solid black;
+    border-width: 0 3px 0 0;
+    height: 46px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .bar-fill {
+      width: 0;
+      background-color: #F47D39;
+      height: 100%;
+      transform-origin: right;
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  .description-row {
+    max-width: 100%;
+
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+
+    .num-description {
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 16px;
+    }
+    .text-description {
+      font-size: 14px;
+      line-height: 21px;
+      white-space: nowrap;
+      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}

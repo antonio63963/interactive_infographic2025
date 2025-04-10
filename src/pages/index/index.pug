@@ -1,0 +1,57 @@
+include ../../common/ui/appPageLayout/appPageLayout.pug
+include ../mathGrants/mathGrants.pug
+include ../mathCuration/mathCuration.pug
+include ../scienceGrants/scienceGrants.pug
+include ../scienceCuration/scienceCuration.pug
+include ../engagementScience/engagementScience.pug
+include ../researchGrants/researchGrants.pug
+include ../policyGrants/policyGrants.pug
+include ../researchCuration/researchCuration.pug
+include ../researchNetworking/researchNetworking.pug
+include ../innovationGrants/innovationGrants.pug
+include ../prizesWinners/prizesWinners.pug
+include ../kfasMedia/kfasMedia.pug
+include ../pilotProjects/pilotProjects.pug
+include ../assignedProjects/assignedProjects.pug
+include ../researchCapacity/researchCapacity.pug
+include ../privateSectorProjects/privateSectorProjects.pug
+include ../innovationCurations/innovationCurations.pug
+include ../organizationalProjects/organizationalProjects.pug
+include ../organizationalAchivements/organizationalAchivements.pug
+include ../financialAchivements/financialAchivements.pug
+include ../policyPapers/policyPapers.pug
+
+include ./topics.pug
+
+
++appPageLayout()
+  +MathGrantPage()
+  +MathCurationPage()
+  +ScienceGrantPage()
+  +ScienceCurationPage()
+  +EngagementSciencePage()
+  +ResearchGrantsPage()
+  +PolicyGrantPage()
+  +ResearchCurationPage()
+  +ResearchNetworkingPage()
+  +InnovationGrantPage()
+  +PrizesWinnersPage()
+  +KfasMediaPage()
+  +PilotProjectsPage()
+  +AssignedProjectsPage()
+  +ResearchCapacityPage()
+  +PrivateSectorProjectsPage()
+  +InnovationCurationsPage()
+  +OrganizationalProjectsPage()
+  +OrganizationalAchivementsPage()
+  +FinancialAchivementsPage()
+  +PolicyPapersPage()
+
+
+  .main-container
+    header.index-header
+      .index-header-content 
+        img.index-logo(src=require("../../assets/svg/logo.svg"))
+        h1.index-header-title KFAS 2023 Highlights
+    +topics()
+    

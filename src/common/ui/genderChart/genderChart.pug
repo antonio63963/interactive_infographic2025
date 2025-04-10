@@ -1,0 +1,6 @@
+mixin genderChart(options) 
+  -const {man, woman, canvasId} = options || {};
+  .genderChart(class!= attributes.class)
+    canvas(id= canvasId)
+    .genderChart__icon-wrapper 
+      img(src=require("../../assets/svg/humans.svg"))

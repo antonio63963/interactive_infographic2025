@@ -1,0 +1,21 @@
+:root {
+  --color-black: #2B2B2B;
+  --color-orange: #f47d39;
+  --color-orange-l: #ffb455;
+  --color-blue: #569fd6;
+  --color-blue-xl: #D6EDFF;
+  --color-yellow: #ffb455;
+  --color-white: white;
+
+  --color-yellow-xl: #ffe4c1;
+  --color-yellow-l: #ffcf90;
+  --color-grey-l: #b3a3a3a3;
+
+  --app-width: 1040px;
+
+  /* brakepoints */
+  --mobileXs: 576px;
+  --mobile: 768px;
+  --tablet: 992px;
+  --lg: 1040px;
+}

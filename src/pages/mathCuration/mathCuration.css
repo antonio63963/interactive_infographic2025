@@ -1,0 +1,107 @@
+@import "../../common/styles/constants.css";
+@import "../../common/styles/animation.css";
+@import "./components/bineficLogoChart/bineficLogoChart.css";
+
+/* .header.mathCuration__header {
+  background-color: #d6edff;
+  width: 994px;
+  max-width: 100vw;
+
+  .header__close-button {
+    background-color: #b4dfff;
+  }
+} */
+
+.container-math-curation {
+  display: flex;
+  .gender-row {
+    align-items: center;
+  }
+}
+
+.orangeStyle {
+  color: var(--color-orange);
+}
+.light-orange-style {
+  color: #ffb455;
+}
+.blue-style {
+  color: var(--color-blue);
+}
+.content-math-curation {
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+  margin-left: clamp(20px, 4rem, 40px);
+  margin-right: clamp(20px, 4rem, 40px);
+
+  .binefic-title {
+    margin-left: 12px;
+    margin-bottom: 24px;
+  }
+  .content-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    margin-bottom: 42px;
+  }
+}
+.bineficImg {
+  margin-top: 14px;
+}
+.bineficImg-camp {
+  margin-top: 10px;
+}
+
+/* GENDER */
+.gender-info {
+  margin-left: 55px;
+  display: flex;
+  .gender-info-col {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .male-info {
+      margin-top: 10px;
+      transition: all 1s ease-in-out;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-math-curation {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content-math-curation {
+    align-items: center;
+    .binefic-title {
+      margin-left: 0;
+    }
+    .content-row {
+      width: 420px;
+    }
+    .gender-row {
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .gender-info {
+    flex-direction: column;
+    margin-left: 0;
+
+    .gender-info-col {
+      width: 140px;
+      align-items: center;
+      margin-left: 0;
+    }
+  }
+}

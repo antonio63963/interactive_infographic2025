@@ -1,0 +1,65 @@
+.gender-breakdown {
+  margin: 52px 0 0 0;
+  .gender-title {
+    margin-bottom: 24px;
+  }
+  .gender-breakdown-title {
+    margin-bottom: 24px;
+  }
+  .gender-breakdown-row {
+    display: flex;
+
+    .gender-breakdown-svg-wrapper {
+      max-width: 70%;
+      flex-shrink: 2;
+
+      .gender-breakdown-svg,
+      .gender-breakdown-vertical-svg {
+        object-fit: contain;
+        max-width: 100%;
+      }
+      .gender-breakdown-vertical-svg {
+        display: none;
+      }
+    }
+    .gender-breakdown-row__col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-left: clamp(16px, 3.3rem, 33px);
+    }
+    .gender-breakdown-values {
+      margin-top: 3px;
+      transition: all 1s ease-in-out;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gender-breakdown {
+    .gender-breakdown-row {
+      flex-direction: column;
+      align-items: center;
+
+      .gender-breakdown-svg-wrapper {
+        margin-bottom: 20px;
+        .gender-breakdown-svg {
+          display: none;
+        }
+        img.gender-breakdown-vertical-svg {
+          display: inline-block;
+        }
+      }
+      .gender-breakdown-row__col {
+        margin-left: 0;
+        width: 197px;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .twoValues__val1 {
+          font-size: 42px;
+        }
+      }
+    }
+  }
+}

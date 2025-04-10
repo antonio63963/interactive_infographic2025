@@ -1,0 +1,63 @@
+
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/twoValuesRow/twoValuesRow.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/barChartItem/barChartItem.pug
+include ../../common/ui/genderBreakdown/genderBreakdown.pug
+
+
+mixin ScienceCurationPage()
+  +popupPage({
+    title: 'Science Dissemination - Curation', 
+    closeClass: 'scienceCurationClose',
+    headerColor: '#D6EDFF',
+    buttonColor: '#B4DFFF'
+    })(class="scienceCurationPage")
+    .container-science-curation
+      .sidebar-vertical.sidebar-three-items
+        +sidebarIconItem({
+          num: 10, 
+          title: 'Events', 
+          color: '#569FD6', 
+          icon: 'folderStarBlue'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: 508, 
+          title: 'Beneficiaries', 
+          color: '#569FD6', 
+          icon: 'persons'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: '129k', 
+          title: 'KD Amount Approved', 
+          color: '#569FD6', 
+          icon: 'kdBlue'
+          })(class="sidebar-vertical-item moveToRight")
+
+      .divider-vertical
+      .content-science-curration  
+        h2.science-curation-binefic-titile Beneficiaries
+        .science-curation-binefic-chart 
+          .science-curation-binefic-graph
+            .binefic-item-s-cur.scaleX.cso-sinior
+            .binefic-item-s-cur.scaleX.coded
+            .binefic-item-s-cur.scaleX.cso-junior
+            .binefic-item-s-cur.scaleX.citizen 
+            .binefic-item-s-cur.scaleX.nasa
+            .binefic-item-s-cur.scaleX.ds2
+            .binefic-item-s-cur.scaleX.ds
+            .binefic-item-s-cur.scaleX.ds-workshop
+            .binefic-item-s-cur.scaleX.gust
+          .science-curation-binefic-info
+            +barChartItem({title: 'CSO Senior Season 7', num: 106,  percent: '100%'})
+            +barChartItem({title: 'CODED Mobile App development', num: 101,  percent: '96%'})
+            +barChartItem({title: 'CSO Junior Season 6', num: 90,  percent: '90%'})
+            +barChartItem({title: 'Citizen Science Forum', num: 72,  percent: '72%'})
+            +barChartItem({title: 'NASA GLOBE Season 3', num: 42,  percent: '42%'})
+            +barChartItem({title: 'A Journey to Data Science 2', num: 32,  percent: '32%'})
+            +barChartItem({title: 'A Journey to Data Science', num: 28,  percent: '28%'})
+            +barChartItem({title: 'Appliend Data Science Workshop', num: 21,  percent: '21%'})
+            +barChartItem({title: 'GUST App Development', num: 16,  percent: '16%'})
+
+        +genderBreakdown({maleVal1: 38, femaleVal1: 62})
+

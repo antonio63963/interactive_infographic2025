@@ -1,0 +1,64 @@
+
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/organizationalRow/organizationalRow.pug
+include ../../common/ui/organizationalColumn/organizationalColumn.pug
+
+
+mixin OrganizationalAchivementsPage()
+  +popupPage({
+        title: 'Organizational Highlights', 
+        closeClass: 'organizationalAchivementsClose',
+        headerColor: '#D6EDFF',
+        buttonColor: '#B4DFFF'
+        })(class="organizationalAchivementsPage")
+    .container-organizationalAchivements
+      .content-organizational-achivements
+        .right-col
+          section.job.job-anime 
+            .num-wrapper
+             span.num-job.anime-text(data-value="24") 0
+             img.num-job-img(src=require("../../assets/svg/caseSound.svg"))
+            h2.title-job job announcements
+          .right-col-bottom.move-up
+            +organizationalRow({
+              num: 702,
+              step: 50,
+              title: 'candidates',
+              subtitle: 'were interviewed'
+            })(class="org-achivements-row")
+              img.icon(src=require("../../assets/svg/peopleSpeak.svg"))
+            +organizationalRow({
+              num: 45,
+              title: 'Kuwaitis',
+              subtitle: 'were hired'
+            })(class="org-achivements-row")
+              img.icon(src=require("../../assets/svg/peopleChecked.svg"))
+            +organizationalRow({
+              num: 62,
+              title: 'Kuwaitization',
+              subtitle: '(professional level and above)',
+              isPercent: true,
+              num2: 17,
+              title2: 'Turnover rate',
+              isPercent2: true,
+            })(class="org-achivements-row")
+              img.icon(src=require("../../assets/svg/tabletChart.svg"))
+
+
+        .left-col.trainings-anime 
+          +organizationalColumn({
+            title: 'Training courses',
+            num: 68,
+            step: 6
+          })(class="org-achivements-col")
+            img.courses-img(src=require("../../assets/svg/hatBooks.svg"))
+          +organizationalColumn({
+            title: 'Trained employees',
+            num: 120,
+            numVirtual: 3,
+            step: 10
+          })(class="org-achivements-col")
+            img.courses-img(src=require("../../assets/svg/peopleGroup.svg"))
+          
+        

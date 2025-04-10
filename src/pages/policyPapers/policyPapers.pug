@@ -1,0 +1,69 @@
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/popupPage/popupPage.pug
+
+mixin tablePapersItem(options)
+  -const {title, researcher, date} = options || {};
+
+  .table-paper-item(class!= attributes.class)
+    p.title= title 
+    p.researcher= researcher 
+    p.date= date
+
+mixin PolicyPapersPage()
+  +popupPage({
+    title: 'Policy Research Papers', 
+    closeClass: 'policyPapersClose',
+    headerColor: '#FFE1D0',
+    buttonColor: '#FFCCAF'
+    })(class="policyPapersPage")
+
+    .container-policy-papers 
+      .top-policy-papers 
+        img.top-lse-logo(src=require("../../assets/svg/policyPapers/londonSchool.svg"))
+        img.top-arrow(src=require("../../assets/svg/policyPapers/arrowRight.svg"))
+        .top-info-row 
+          img(src=require('../../assets/svg/searchList.svg'))
+          span.num 8
+          span.text Policy Research Papers
+      .table-papers 
+        .table-papers-head 
+          p.col.title-mobile-col Papers
+          p.col.title-col Paper Title
+          p.col.researcher-col Researcher
+          p.col.date-col Date Published
+        +tablePapersItem({
+          title: 'Export Diversification and Economic Growth in Kuwait: Evidence from Time Series and Field Survey Analyses',
+          researcher: 'Dr. Dari Al Huwail',
+          date: 'January 2023'
+        })  
+        +tablePapersItem({
+          title: 'Locating the Housing Crisis in Kuwaiti State, Land and Society',
+          researcher: 'Do Young Oh and Hyun Bang Shin',
+          date: 'August 2023'
+        })  
+        +tablePapersItem({
+          title: 'Youth Citizenship Identities in Kuwait: The Role of Citizenship Education and the Kuwaiti Diwaniyas',
+          researcher: 'Sam Mejias, Rania Al-Nakib, Abdullah al-Khonaini and Rana Khazbak',
+          date: 'September 2023'
+        })  
+        +tablePapersItem({
+          title: 'Digital Accessibility Across Kuwait’s Software Development Landscape',
+          researcher: 'Zainab AlMeraj',
+          date: 'October 2023'
+        })  
+        +tablePapersItem({
+          title: 'Ecologies of Belonging and Exclusion in Urban Kuwait: Towards An Urban Co-Designed Approach',
+          researcher: 'Nazanin Shahrokni and Spyros A. Sofos',
+          date: 'October 2023'
+        })  
+        +tablePapersItem({
+          title: 'Kuwait’s Readiness for the Knowledge-Based Economy: An Exploratory Study',
+          researcher: 'Bibi M. Alajmi',
+          date: 'November 2023'
+        })  
+        +tablePapersItem({
+          title: 'Kuwait’s Enduring Digital Divide: Socio-Demographic Characteristics Relative to ICT Access, Skills, and Outcomes',
+          researcher: 'Fahed Al-Sumait and Cristina Navarro',
+          date: 'December 2023'
+        })  
+        

@@ -1,0 +1,27 @@
+.big-num-with-title {
+  display: flex;
+
+  .col {
+    margin-left: 22px;
+    display: flex;
+    flex-direction: column;
+
+    .amount {
+      color: var(--color-orange);
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 700;
+    }
+    .title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 19.6px;
+      margin-bottom: 0;
+    }
+    .subtitle {
+      font-size: 14px;
+      line-height: 19.6px;
+      text-align: start;
+    }
+  }
+}

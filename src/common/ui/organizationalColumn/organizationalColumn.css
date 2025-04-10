@@ -1,0 +1,35 @@
+.organizational-column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-bottom: 20px;
+
+  .title-row {
+    display: flex;
+    align-items: center;
+
+    .organizational-column-title {
+      width: 90px;
+      margin-left: 16px;
+    }
+  }
+
+  .num-row {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+
+    span.num {
+      width: 48px;
+      text-align: center;
+      color: var(--color-blue);
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 600;
+    }
+    .text {
+      font-size: 14px;
+      margin-left: 16px;
+    }
+  }
+}

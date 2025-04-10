@@ -1,0 +1,6 @@
+mixin appHeaderDetails(options)
+  -const {title, closeClass, headerColor, buttonColor} = options || {};
+  header.header(class!= attributes.class, style={'background-color': headerColor}) 
+    h1.header__title= title
+    button.header__close-button(class= closeClass, style={'background-color': buttonColor}) 
+      img(src=require('../../assets/svg/close.svg'))

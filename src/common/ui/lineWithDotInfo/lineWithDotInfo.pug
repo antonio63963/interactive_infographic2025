@@ -1,0 +1,15 @@
+mixin lineWithDotInfo(options)
+  -const {text, isReverse} = options || {};
+
+    if !isReverse
+      .lineWithDotInfo(class!= attributes.class)
+        p.text= text 
+        .line-row 
+          .line 
+          .dot
+    else 
+      .lineWithDotInfo.reverse(class!= attributes.class)
+        p.text= text 
+        .line-row 
+          .dot    
+          .line 
