@@ -1,8 +1,10 @@
 mixin barChartItem(options)
-  -const {title, num, color, percent, titleClass} = options || {};
+  -const {title, num, bigNum, color, percent, titleClass} = options || {};
   .bar-chart-item(class!= attributes.class) 
     .bar-chart-row 
       if(num)
         .num= num
+      if(bigNum)
+        .bigNum= bigNum  
       .title(class= titleClass)= title
     .bar-graph(style={background: color || "#FFB455", width: percent}, class="scaleX")

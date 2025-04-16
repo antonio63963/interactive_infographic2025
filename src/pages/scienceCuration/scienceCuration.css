@@ -23,11 +23,11 @@
 }
 
 .science-curation-binefic-chart {
-  width: 560px;
+  width: 660px;
   max-width: calc(100vw - 40px);
   display: flex;
   .science-curation-binefic-graph {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -41,32 +41,62 @@
       margin: 8px 0;
       transform-origin: right;
     }
-    .cso-sinior {
+    .oloomBus {
+      width: 0%;
+    }
+    .scienceExpo {
+      width: 0%;
+    }
+    .theJourney {
       width: 100%;
     }
-    .coded {
-      width: 96%;
+    .effectively {
+      width: 80%;
     }
-    .cso-junior {
-      width: 90%;
+    .step {
+      width: 52%;
     }
-    .citizen {
-      width: 72%;
+    .google {
+      width: 52%;
     }
-    .nasa {
-      width: 42%;
+    .poster {
+      width: 50%;
     }
-    .ds2 {
-      width: 32%;
+    .cso_siniors {
+      width: 48%;
     }
-    .ds {
+    .cso_juniors {
+      width: 46%;
+    }
+    .google_level1 {
+      width: 44%;
+    }
+    .from_classroom {
+      width: 34%;
+    }
+    .google_level2 {
       width: 28%;
     }
-    .ds-workshop {
-      width: 21%;
+    .cubesat {
+      width: 20%;
     }
-    .gust {
-      width: 16%;
+    .ambassadors {
+      width: 17%;
+    }
+    .asteroid {
+      width: 10%;
+    }
+    .korea {
+      width: 9%;
+    }
+    .seeds {
+      width: 7%;
+    }
+    .asteroid1 {
+      width: 5%;
+    }
+    .colorado {
+      width: 3%;
     }
   }
   .science-curation-binefic-info {

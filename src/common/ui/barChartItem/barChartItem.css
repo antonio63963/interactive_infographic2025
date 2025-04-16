@@ -15,7 +15,15 @@
     .num {
       font-size: 12px;
       font-weight: 600;
-      margin-right: 36px;
+      width: 46px;
+      margin-right: 14px;
+    }
+    .bigNum {
+      font-size: 16px;
+      line-height: 14px;
+      font-weight: 600;
+      width: 46px;
+      margin-right: 14px;
     }
     .title {
       font-size: 12px;
@@ -28,7 +36,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 623px) {
   .bar-chart-item {
     margin-bottom: 18px;
 
