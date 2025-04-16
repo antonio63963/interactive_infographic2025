@@ -122,6 +122,15 @@
     margin: 60px 20px 0 20px;
   }
 }
+@media screen and (max-width: 647px) {
+  .science-curation-binefic-chart {
+    /* margin-top: 22px; */
+    /* justify-content: center; */
+    .science-curation-binefic-graph {
+      width: 30%;
+    }
+  }
+}
 @media screen and (max-width: 576px) {
   .science-curation-binefic-chart {
     /* margin-top: 22px; */

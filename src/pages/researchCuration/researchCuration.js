@@ -36,7 +36,7 @@ const researchCurationBars = document.querySelectorAll(
   ".research-curation-content .item-s-cur"
 );
 const researchCurationMobileBars = document.querySelectorAll(
-  ".research-curation-content .bar-graph"
+  ".research-curation-content .bar-graph-58"
 );
 
 function animationResearchCuration() {

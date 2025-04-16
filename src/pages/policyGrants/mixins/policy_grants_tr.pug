@@ -1,0 +1,18 @@
+mixin policyGrantsTR(options)
+  -const {text1, text2, text3, isBold} = options || {};
+  li.pg-tr(class!= attributes.class) 
+    .pg_col
+      if(isBold)
+        p.pg_title__bold= text1
+      else 
+        p.pg_title= text1
+    .pg_col
+      if(isBold)
+        p.pg_title__bold= text2
+      else 
+        p.pg_title= text2
+    .pg_col
+      if(isBold)
+        p.pg_title__bold= text3
+      else 
+        p.pg_title= text3

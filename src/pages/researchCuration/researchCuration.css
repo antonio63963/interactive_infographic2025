@@ -15,7 +15,6 @@
     justify-content: space-between;
     width: 100%;
     max-width: 800px;
-
   }
   .sidebar-vertical-item {
     margin-top: 0;
@@ -165,8 +164,6 @@
     }
   }
   .research-curation-content {
-    
-
     .binefic-chart-description-mobile {
       margin-top: 24px;
       margin-left: 20px;
@@ -183,6 +180,13 @@
   }
 }
 
+@media screen and (max-width: 647px) {
+  .research-curation-content {
+    .research-curation-binefic-graph, .research-curation-binefic-info {
+      height: 224px;
+    }
+  }
+}
 @media screen and (max-width: 576px) {
   .container-researchCuration {
     height: 100%;

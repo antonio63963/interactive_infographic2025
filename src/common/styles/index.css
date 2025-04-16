@@ -46,6 +46,8 @@
 @import "../../pages/scienceGrants/scienceGrants.css";
 @import "../../pages/policyPapers/policyPapers.css";
 
+@import "../../pages/policyGrants/mixins/policy_grants_tr.css";
+
 * {
   margin: 0;
   padding: 0;

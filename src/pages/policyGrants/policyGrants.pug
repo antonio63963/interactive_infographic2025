@@ -2,6 +2,7 @@ include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
 include ../../common/ui/popupPage/popupPage.pug
 include ../../common/ui/sidebarHorizontal/sidebarHorizontal.pug
 include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+include ./mixins/policy_grants_tr.pug
 
 mixin PolicyGrantPage()
   +popupPage({
@@ -14,7 +15,7 @@ mixin PolicyGrantPage()
     .container-policy-grants  
       +sidebarHorizontal()(class="policyGrant__sidebar sidebar-three-items")  
         +sidebarIconItem({
-          num: 9, 
+          num: 13, 
           title: 'Proposals Received', 
           color: '#F47D39', 
           icon: 'folderStarOrange'
@@ -27,7 +28,7 @@ mixin PolicyGrantPage()
           icon: 'personCheckedOrange'
           })(class="sidebar-vertical-item policy-grant-icon moveToRight")
         +sidebarIconItem({
-          num: '27.1k', 
+          num: '22.1k', 
           title: 'KD Amount Approved', 
           color: '#F47D39', 
           icon: 'kdOrange'
@@ -38,13 +39,33 @@ mixin PolicyGrantPage()
         .policy-grant-col 
           h2.col-title Applications Breakdown domain
           ul.domains-list
-            li.domain-item.moveUp
-              .dot 
-              p.domain-item-text Kuwait Energy Outlook - Building an Online Energy Planning Dashboard
-            li.domain-item.moveUp
-              .dot 
-              p.domain-item-text Preparing engineers for the sustainable future: embedding the new Kuwait 2035 vision into engineering
-            li.domain-item.moveUp
-              .dot 
-              p.domain-item-text Development of a National Prescribing Competency Framework for Kuwait
-                
+            +policyGrantsTR({
+              text1: 'Project', 
+              text2: 'Principle Investigator\n(PI) institute', 
+              text3: 'Domain', 
+              isBold: true
+              })(class="domain-item moveUp")
+            +policyGrantsTR({
+              text1: 'Kuwait Energy Outlook - Buildingan Online Energy Planning Dashboard', 
+              text2: 'Kuwait Institute for Scientific Research(KISR)', 
+              text3: 'Energy', 
+              })(class=" domain-item moveUp")
+            +policyGrantsTR({
+              text1: 'Preparing engineers for the sustainable future: embedding the new Kuwait 2035 vision into engineering', 
+              text2: 'University of Kuwait (AUK) ', 
+              text3: 'Education', 
+              })(class="domain-item moveUp")
+            +policyGrantsTR({
+              text1: 'Development of a National Prescribing Competency Framework for Kuwait Kuwait', 
+              text2: 'Kuwait University', 
+              text3: 'Education', 
+              })(class="domain-item moveUp")
+            //- li.domain-item.moveUp
+            //-   .dot 
+            //-   p.domain-item-text Kuwait Energy Outlook - Building an Online Energy Planning Dashboard
+            //- li.domain-item.moveUp
+            //-   .dot 
+            //-   p.domain-item-text Preparing engineers for the sustainable future: embedding the new Kuwait 2035 vision into engineering
+            //- li.domain-item.moveUp
+            //-   .dot 
+            //-   p.domain-item-text Development of a National Prescribing Competency Framework for Kuwait
