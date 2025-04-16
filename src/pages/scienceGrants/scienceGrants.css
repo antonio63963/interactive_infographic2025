@@ -26,7 +26,7 @@
     transform-origin: left;
     height: 73px;
     /* width: 260px; */
-    width: 50%;
+    width: 40%;
     background-color: var(--color-orange);
     transition: all 1s linear;
   }
@@ -34,7 +34,7 @@
     transform-origin: left;
     height: 73px;
     /* width: 90px; */
-    width: 20%;
+    width: 0%;
     background-color: var(--color-blue);
     transition: all 0.5s linear 1s;
   }
@@ -42,8 +42,8 @@
     transform-origin: left;
     height: 73px;
     /* width: 77px; */
-    width: 15%;
-    background-color: #00476b;
+    width: 50%;
+    background-color: #69AADB;
     transition: all 0.5s linear 1.5s;
   }
   .grant-private {
@@ -51,7 +51,7 @@
     height: 73px;
     /* width: 39px; */
     width: 10%;
-    background-color: #969696;
+    background-color: #00476B;
     transition: all 0.5s linear 2s;
   }
   .grant-item {

@@ -28,7 +28,7 @@ mixin ScienceGrantPage()
           icon: 'personCheckedOrange'
           })(class="sidebar__img moveToRight")
         +sidebarIconItem({
-          num: '413k', 
+          num: '413,3k', 
           title: 'KD Amount Approved', 
           color: '#F47D39', 
           icon: 'kdOrange'
@@ -37,18 +37,18 @@ mixin ScienceGrantPage()
       h2 Approved Applications by Sector 
       .chart-grants 
         .grant-ngo.scaleX.grant-item
-        .grant-public.scaleX.grant-item
+        //- .grant-public.scaleX.grant-item
         .grant-academic.scaleX.grant-item
         .grant-private.scaleX.grant-item
 
       .chart-description 
         .chart-description-row.moveUp 
-          +chartInfoIcons({digit: 12, text: 'Non-Governmental Organizations'})
+          +chartInfoIcons({digit: 12, text: 'NGO'})
             img(src=require('../../assets/svg/scienceGrant/ngo.svg'))
-          +chartInfoIcons({digit: 0, text: 'Public'})
-            img(src=require('../../assets/svg/scienceGrant/public.svg'))
+          +chartInfoIcons({digit: 3, text: 'Private'})
+            img(src=require('../../assets/svg/scienceGrant/private.svg'))
         .chart-description-row.moveUp
           +chartInfoIcons({digit: 15, text: 'Academic / Research'})
             img(src=require('../../assets/svg/scienceGrant/academic.svg'))
-          +chartInfoIcons({digit: 3, text: 'Private'})
-            img(src=require('../../assets/svg/scienceGrant/private.svg'))
+          +chartInfoIcons({digit: 0, text: 'Public'})
+            img(src=require('../../assets/svg/scienceGrant/public.svg'))
