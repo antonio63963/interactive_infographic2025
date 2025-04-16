@@ -17,8 +17,9 @@
       width: 180px;
       min-width: 132px;
       margin-right: 15px;
-    
-      .year, .text {
+
+      .year,
+      .text {
         font-size: 18px;
         font-weight: 600;
         line-height: 27px;
@@ -120,37 +121,37 @@
       transition: all 1s ease-in-out;
     }
 
-    .research-grants-icon-hive.health {
-      top: 0;
-      left: 0;
-    }
     .research-grants-icon-hive.energy {
-      left: 20%;
+      left: 0%;
       top: 20%;
     }
-    .research-grants-icon-hive.environment {
-      left: 35%;
-      top: 35%;
+    .research-grants-icon-hive.health {
+      top: 0%;
+      left: 18%;
     }
     .research-grants-icon-hive.other {
-      left: 50%;
-      top: 22%;
+      left: 28%;
+      top: 40%;
     }
-    .research-grants-icon-hive.digital {
-      left: 58%;
-      top: 0;
-    }
-    .research-grants-icon-hive.food {
-      left: 70%;
-      top: 20%;
+    .research-grants-icon-hive.environment {
+      left: 40%;
+      top: 15%;
     }
     .research-grants-icon-hive.water {
+      left: 60%;
+      top: 10%;
+    }
+    .research-grants-icon-hive.digital {
+      left: 65%;
+      top: 35%;
+    }
+    .research-grants-icon-hive.food {
       left: 80%;
-      top: 15%;
+      top: 10%;
     }
     .research-grants-icon-hive.education {
       left: 90%;
-      top: 25%;
+      top: 35%;
     }
 
     .research-grants-icon-hive.toTop {
@@ -228,38 +229,38 @@
     .domain-icons-hive {
       height: 493px;
 
-      .research-grants-icon-hive.health {
-        top: 0;
-        left: 10%;
-      }
       .research-grants-icon-hive.energy {
-        left: 40%;
+        left: 0%;
         top: 20%;
       }
+      .research-grants-icon-hive.health {
+        top: 0;
+        left: 25%;
+      }
+      .research-grants-icon-hive.other {
+        left: 50%;
+        top: 15%;
+      }
       .research-grants-icon-hive.environment {
-        left: 55%;
+        left: 70%;
         top: 15%;
       }
       /* 2row */
-      .research-grants-icon-hive.other {
+      .research-grants-icon-hive.water {
         left: 10%;
-        top: 62%;
+        top: 70%;
       }
       .research-grants-icon-hive.digital {
-        left: 35%;
+        left: 30%;
         top: 72%;
       }
       .research-grants-icon-hive.food {
         left: 65%;
         top: 68%;
       }
-      .research-grants-icon-hive.water {
-        left: 80%;
-        top: 15%;
-      }
       .research-grants-icon-hive.education {
         left: 80%;
-        top: 45%;
+        top: 62%;
       }
     }
   }
@@ -293,41 +294,41 @@
     .domain-icons-hive {
       height: 600px;
 
-      .research-grants-icon-hive.health {
-        top: 15%;
-        left: 0;
+      .research-grants-icon-hive.energy {
+        left: 0%;
+        top: 0%;
         width: 155px;
       }
-      .research-grants-icon-hive.energy {
+      .research-grants-icon-hive.health {
+        top: 0%;
         left: 35%;
-        top: 35%;
         width: 106px;
       }
-      .research-grants-icon-hive.environment {
-        left: 55%;
+      .research-grants-icon-hive.other {
+        left: 66%;
         top: 0%;
-        width: 119px;
       }
       /* 2row */
-      .research-grants-icon-hive.other {
-        left: 0%;
-        top: 62%;
-      }
-      .research-grants-icon-hive.digital {
+      .research-grants-icon-hive.environment {
         left: 35%;
-        top: 75%;
-      }
-      .research-grants-icon-hive.food {
-        left: 78%;
-        top: 68%;
+        top: 30%;
+        width: 119px;
       }
       .research-grants-icon-hive.water {
-        left: 80%;
+        left: 0%;
         top: 45%;
       }
+      .research-grants-icon-hive.digital {
+        left: 65%;
+        top: 50%;
+      }
+      .research-grants-icon-hive.food {
+        left: 25%;
+        top: 60%;
+      }
       .research-grants-icon-hive.education {
-        left: 0;
-        top: 0;
+        left: 50%;
+        top: 75%;
       }
     }
   }
