@@ -15,11 +15,11 @@ mixin EngagementSciencePage()
 
     .container-engagementScience 
       +sidebarHorizontal()(class="sidebar-engagement-science")
-        ul.sidebar-horizontal-item.sidebar-description.moveToRight
-          li.sidebar-description-item Cycles:
-          li.sidebar-description-item October 2022
-          li.sidebar-description-item February 2023
-          li.sidebar-description-item  June 2023
+        //- ul.sidebar-horizontal-item.sidebar-description.moveToRight
+        //-   li.sidebar-description-item Cycles:
+        //-   li.sidebar-description-item October 2022
+        //-   li.sidebar-description-item February 2023
+        //-   li.sidebar-description-item  June 2023
         .sidebar-horizontal-icons-row
           +sidebarIconItem({
             num: 53, 
@@ -34,13 +34,13 @@ mixin EngagementSciencePage()
             icon: 'personCheckedOrange'
             })(class="sidebar-horizontal-item moveToRight")
           +sidebarIconItem({
-            num: '371k', 
+            num: '371.9k', 
             title: 'KD Amount Approved',
             color: '#F47D39', 
             icon: 'kdOrange'
             })(class="sidebar-horizontal-item moveToRight")
           +sidebarIconItem({
-            num: '4k', 
+            num: '4.6k', 
             title: 'Participants',
             color: '#F47D39', 
             icon: 'persons'
@@ -120,21 +120,20 @@ mixin EngagementSciencePage()
 
           .binefic-chart 
             .chart-graph 
-              img.img(src=require('../../assets/svg/squareChart.svg'))
-              .chart-value.orange 56%
-              .chart-value.yellow 17%
-              .chart-value.dark 12%
-              .chart-value.grey 3%
-              .chart-value.light-blue 5%
-              .chart-value.blue 7%
+              img.img(src=require('../../assets/svg/squareChart.jpg'))
+              .chart-value.orange 85%
+              .chart-value.yellow 11%
+              .chart-value.dark 3%
+              .chart-value.light-blue 1%
+              
 
             .binefic-chart-description
               +labelWithColor({color: '#F47D39', text: 'Conferences'})(class="binefic-label")
-              +labelWithColor({color: '#FFB455', text: 'Training'})(class="binefic-label")
-              +labelWithColor({color: '#003D63', text: 'Workshops'})(class="binefic-label")
+              +labelWithColor({color: '#FFB455', text: 'Workshops'})(class="binefic-label")
+              +labelWithColor({color: '#003D63', text: 'Training'})(class="binefic-label")
               +labelWithColor({color: '#7DC0F1', text: 'Fairs'})(class="binefic-label")
-              +labelWithColor({color: '#A1CAE8', text: 'Competitions'})(class="binefic-label")
-              +labelWithColor({color: '#A3A3A3', text: 'Seminars'})(class="binefic-label")
+              //- +labelWithColor({color: '#A1CAE8', text: 'Competitions'})(class="binefic-label")
+              //- +labelWithColor({color: '#A3A3A3', text: 'Seminars'})(class="binefic-label")
 
 
 

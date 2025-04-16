@@ -46,7 +46,7 @@ const bineficVluesElements = document.querySelectorAll(
   ".engagementSciencePage .chart-graph .chart-value"
 );
 const barsValuesList = [100, 95, 80, 25, 8, 8, 3];
-const bineficValuesList = [56, 17, 12, 3, 5, 7];
+const bineficValuesList = [85, 11, 3, 1];
 
 function animationEngagementScience() {
   Array.from(sidebarIcons)
