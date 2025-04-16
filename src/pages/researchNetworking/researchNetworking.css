@@ -31,7 +31,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      height: 338px;
+      height: 483px;
       width: 165px;
       max-width: 165px;
     }
@@ -40,6 +40,9 @@
       margin-bottom: 4px;
       transform-origin: bottom;
       transition: all 0.5s ease-in-out;
+    }
+    .cern1,.aaac,.sts,.cern2,.imec {
+      margin-bottom: 0;
     }
     .workshop {
       background-color: var(--color-blue);
@@ -142,6 +145,9 @@
         .stack-chart-item {
           margin-left: 4px;
           margin-top: 0;
+        }
+        .aaac,.sts,.cern2,.imec {
+          margin-left: 0;
         }
       }
       .research-networking-row {

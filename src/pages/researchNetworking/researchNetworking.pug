@@ -15,83 +15,134 @@ mixin ResearchNetworkingPage()
     .container-research-networking 
       .sidebar-vertical(class="sidebar-research-networking sidebar-three-items")
         +sidebarIconItem({
-          num: 7, 
+          num: 12, 
           title: 'Events',
           color: '#569FD6', 
           icon: 'folderStarBlue'
           })(class="sidebar-vertical-item moveToRight")
         +sidebarIconItem({
-          num: 838, 
+          num: '1.2k', 
           title: 'Beneficiaries',
           color: '#569FD6', 
           icon: 'persons'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: '28.7k', 
+          title: 'Amount Approved',
+          color: '#569FD6', 
+          icon: 'kdBlue'
           })(class="sidebar-vertical-item moveToRight")
 
       .divider-vertical
 
       .research-Networking-content
-          h2 Beneficiaries
-          .research-networking-row
-            .benefic-chart 
-              .stack-chart-item.webinar(
-                data-percent="37", 
-                data-color="#F47D39",
-                data-font="38px",
-                style={height: 0}
-                )
-              .stack-chart-item.kuwait(
-                data-percent="24", 
-                data-color="#F47D39",
-                data-font="38px",
-                style={height: 0}
-                )
-              .stack-chart-item.conference(
-                data-percent="16", 
-                data-color="#FFB455",
-                data-font="24px",
-                style={height: 0}
-                )
-              .stack-chart-item.results(
-                data-percent="10", 
-                data-color="#FFB455",
-                data-font="24px",
-                style={height: 0}
-                )
-              .stack-chart-item.seminar(
-                data-percent="11", 
-                data-color="#FFB455",
-                data-font="24px",
-                style={height: 0}
-                )
-              .stack-chart-item.workshop(
-                data-percent="2", 
-                data-color="#569FD6",
-                data-font="18px",
-                style={height: 0}
-                )
-      
-            .benefic-chart-description 
-              .stack-description-item 
-                .num 0%
-                .text Announcement of 2nd Cycle 2023 and Q&A Webinar
-              .stack-description-item 
-                .num 0%
-                .text Kuwait University Scientific Research Conference - 2023 "Bridging Sciences Together: Innovation & Sustainability"
-              .stack-description-item 
-                .num 0%
-                .text 2nd Research and Poster Conference (MOH)
-              .stack-description-item 
-                .num 0%
-                .text Seminar call for proposal applications
-              .stack-description-item 
-                .num 0%
-                .text Results and Outcome for the Project: Effect of Reverse Osmosis Units' Brine Reject from Agricultural Farms in Kuwait on Groundwater Quality and Levels
-              .stack-description-item 
-                .num 0%
-                .text Medical and Dental Research Workshop
-                
-              
-            
+        h2 Beneficiaries
+        .research-networking-row
+          .benefic-chart 
+            .stack-chart-item.webinar(
+              data-percent="41", 
+              data-color="#F47D39",
+              data-font="38px",
+              style={height: 0}
+              )
+            .stack-chart-item.kuwait(
+              data-percent="24", 
+              data-color="#F47D39",
+              data-font="38px",
+              style={height: 0}
+              )
+            .stack-chart-item.conference(
+              data-percent="10", 
+              data-color="#FFB455",
+              data-font="24px",
+              style={height: 0}
+              )
+            .stack-chart-item.results(
+              data-percent="10", 
+              data-color="#FFB455",
+              data-font="24px",
+              style={height: 0}
+              )
+            .stack-chart-item.seminar(
+              data-percent="8", 
+              data-color="#FFB455",
+              data-font="24px",
+              style={height: 0}
+              )
+            .stack-chart-item.workshop(
+              data-percent="5", 
+              data-color="#FFB455",
+              data-font="24px",
+              style={height: 0}
+              )
+            .stack-chart-item.cern1(
+              data-percent="1", 
+              data-color="#569FD6",
+              data-font="18px",
+              style={height: 0}
+              )
+            .stack-chart-item.aaac(
+              data-percent="1", 
+              data-color="#569FD6",
+              data-font="18px",
+              style={height: 0}
+              )
+            .stack-chart-item.sts(
+              data-percent="0.3", 
+              data-color="#569FD6",
+              data-font="18px",
+              style={height: 0}
+              )
+            .stack-chart-item.cern2(
+              data-percent="0.2", 
+              data-color="#569FD6",
+              data-font="18px",
+              style={height: 0}
+              )
+            .stack-chart-item.imec(
+              data-percent="0.1", 
+              data-color="#569FD6",
+              data-font="18px",
+              style={height: 0}
+              )
+
+          .benefic-chart-description 
+            .stack-description-item 
+              .num 0%
+              .text Kuwait University - Poster Day 3rd (Research)
+            .stack-description-item 
+              .num 0%
+              .text Kuwait University - Poster Day 28th (College of Med)
+            .stack-description-item 
+              .num 0%
+              .text Abdullah Al Salem University (AASU)
+            .stack-description-item 
+              .num 0%
+              .text Kuwait University - College of Science
+            .stack-description-item 
+              .num 0%
+              .text American International University
+            .stack-description-item 
+              .num 0%
+              .text International University of Science and Technology
+            .stack-description-item 
+              .num 0%
+              .text CERN orientation day
+            .stack-description-item 
+              .num 0%
+              .text AAAS Annual Meeting 2025
+            .stack-description-item 
+              .num 0%
+              .text STS Forum
+            .stack-description-item 
+              .num 0%
+              .text CERN orientation day
+            .stack-description-item 
+              .num 0%
+              .text IMEC Technology Forum 2024
+
+
+
 
 
 
