@@ -102,8 +102,10 @@
   .science-curation-binefic-info {
     margin-left: clamp(12px, 2rem, 20px);
     margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 }
 

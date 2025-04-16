@@ -1,0 +1,10 @@
+mixin barChartItem58(options)
+  -const {title, num, bigNum, color, percent, titleClass} = options || {};
+  .bar-chart-item-58(class!= attributes.class) 
+    .bar-chart-row-58 
+      if(num)
+        .num-58= num
+      if(bigNum)
+        .bigNum-58= bigNum  
+      .title-58(class= titleClass)= title
+    .bar-graph-58(style={background: color || "#FFB455", width: percent}, class="scaleX")
