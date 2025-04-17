@@ -21,69 +21,110 @@ mixin PilotProjectsPage()
       .container-pilotProjects
         +card({
           canvasId: 'pilot-project-1', 
-          percent: '10%', 
+          percent: '15%', 
           color: '#7DC0F1', 
+          description: 'Pilot Study to Assess the Commercial Production of Silage of Greenery Residues as Animal Feed: Phase II', 
+          totalAmount: '39.2K'
+          })(class="pilot-cow")
+          img(src=require('../../assets/svg/pilotProjects/cow.svg'))
+        +card({
+          canvasId: 'pilot-project-2', 
+          percent: '35%', 
+          color: '#7DC0F1', 
+          description: 'Development of Feed Formulation for Green Inland Production of White-leg Shrimp', 
+          totalAmount: '47.8K'
+          })(class="pilot-shrimp")
+          img(src=require('../../assets/svg/pilotProjects/shrimp.svg'))
+        +card({
+          canvasId: 'pilot-project-3', 
+          percent: '12%', 
+          color: '#7DC0F1', 
+          description: 'Smart Technology Application to Improve Water Efficiency in Kuwait Mosques', 
+          totalAmount: '32.4K'
+          })(class="pilot-dropAI")
+          img(src=require('../../assets/svg/pilotProjects/dropAI.svg'))
+        +card({
+          canvasId: 'pilot-project-4', 
+          percent: '5%', 
+          color: '#7DC0F1', 
+          description: 'Cup Cleaner Device', 
+          totalAmount: '46K'
+          })(class="pilot-cup")
+          img(src=require('../../assets/svg/pilotProjects/cup.svg'))
+          //- second row
+        +card({
+          canvasId: 'pilot-project-5', 
+          percent: '65%', 
+          color: '#7DC0F1', 
+          description: 'Pilot Project to establish the first wool processing center in Kuwait', 
+          totalAmount: '135.4K'
+          })(class="pilot-wool")
+          img(src=require('../../assets/svg/pilotProjects/wool.svg'))
+        +card({
+          canvasId: 'pilot-project-6', 
+          percent: '15%', 
+          color: '#7DC0F1', 
+          description: 'Development of Commercial System for Onsite Treatment of Household’s Light Greywater', 
+          totalAmount: '24.9K'
+          })(class="pilot-homeDrop")
+          img(src=require('../../assets/svg/pilotProjects/homeDrop.svg'))
+        +card({
+          canvasId: 'pilot-project-7', 
+          percent: '25%', 
+          color: '#7DC0F1', 
+          description: 'Feasibility study of innovative low-energy integrated system for desalination and cooling', 
+          totalAmount: '159.2K',
+          fontSizeDescription: '12px'
+          })(class="pilot-dropSnow")
+          img(src=require('../../assets/svg/pilotProjects/dropSnow.svg'))
+        +card({
+          canvasId: 'pilot-project-8', 
+          percent: '5%', 
+          color: '#7DC0F1', 
+          description: 'Testing of the Latest Commercial Grade Perc Mono-Facial and Bifacial Solar Panels in Kuwait', 
+          totalAmount: '111.1K'
+          })(class="pilot-solar")
+          img(src=require('../../assets/svg/pilotProjects/solar.svg'))
+        //- 
+        +card({
+          canvasId: 'pilot-project-9', 
+          percent: '35%', 
+          color: '#FFB455', 
           description: 'A New Electric Vehicle Fast Charger with Integrated Distributed Generators', 
           totalAmount: '49.7K'
           })(class="pilot-electric")
           img(src=require('../../assets/svg/pilotProjects/electric.svg'))
         +card({
-          canvasId: 'pilot-project-2', 
-          percent: '50%', 
-          color: '#7DC0F1', 
-          description: 'Green Valorization of 100% food waste in Kuwait as a renewable energy source using anaerobic digestion', 
-          totalAmount: '8.66K'
+          canvasId: 'pilot-project-10', 
+          percent: '100%', 
+          color: '#FFB455', 
+          description: 'Green Valorization of food waste in Kuwait as a renewable energy source using anaerobic digestion', 
+          totalAmount: '8.7K'
           })(class="pilot-green")
           img(src=require('../../assets/svg/pilotProjects/green.svg'))
         +card({
-          canvasId: 'pilot-project-3', 
-          percent: '80%', 
+          canvasId: 'pilot-project-11', 
+          percent: '70%', 
           color: '#FFB455', 
           description: 'Kyphoplasty Biodegradable Kyphoplasty Balloon System Design and First in Man Study', 
-          totalAmount: '295K'
+          totalAmount: '295.5K'
           })(class="pilot-bio")
           img(src=require('../../assets/svg/pilotProjects/bio.svg'))
         +card({
-          canvasId: 'pilot-project-4', 
-          percent: '80%', 
+          canvasId: 'pilot-project-12', 
+          percent: '95%', 
           color: '#FFB455', 
-          description: 'Design KFAS Terrace made of recycled tires-Phase I', 
+          description: 'Kuwait University CubeSat 1', 
+          totalAmount: '316.9K'
+          })(class="pilot-smartHat")
+          img(src=require('../../assets/svg/pilotProjects/smartHat.svg'))
+        +card({
+          canvasId: 'pilot-project-13', 
+          percent: '100%', 
+          color: '#F47D39', 
+          description: 'Design KFAS Terrace made of recycled tires- Phase I', 
           totalAmount: '9.5K'
           })(class="pilot-kfas")
           img(src=require('../../assets/svg/pilotProjects/kfas.svg'))
-          //- second row
-        +card({
-          canvasId: 'pilot-project-5', 
-          percent: '80%', 
-          color: '#FFB455', 
-          description: 'Kuwait University CubeSat 1', 
-          totalAmount: '316K'
-          })(class="pilot-university")
-          img(src=require('../../assets/svg/pilotProjects/university.svg'))
-        +card({
-          canvasId: 'pilot-project-6', 
-          percent: '100%', 
-          color: '#F47D39', 
-          description: 'Development of Low Cost Micro Solar Still', 
-          totalAmount: '43.1K'
-          })(class="pilot-solar")
-          img(src=require('../../assets/svg/pilotProjects/solar.svg'))
-        +card({
-          canvasId: 'pilot-project-7', 
-          percent: '100%', 
-          color: '#F47D39', 
-          description: 'Utilization of Industrially Produced Carbon Dioxide in Protected Horticulture Facilities for Food Security Enhancement and Contribution to Climate Change Mitigation', 
-          totalAmount: '66K',
-          fontSizeDescription: '12px'
-          })(class="pilot-co")
-          img(src=require('../../assets/svg/pilotProjects/co.svg'))
-        +card({
-          canvasId: 'pilot-project-8', 
-          percent: '100%', 
-          color: '#F47D39', 
-          description: 'Consulting Service for Solar PV Integrated in Buildings', 
-          totalAmount: '84K'
-          })(class="pilot-service")
-          img(src=require('../../assets/svg/pilotProjects/service.svg'))
         
 

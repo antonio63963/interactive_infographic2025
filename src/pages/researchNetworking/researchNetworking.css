@@ -9,7 +9,8 @@
   padding-bottom: 43px;
 
   .divider-vertical {
-    height: 413px;
+    /* height: 413px; */
+    
   }
   .sidebar-vertical-item {
     width: 125px;

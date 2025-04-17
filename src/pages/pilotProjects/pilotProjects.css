@@ -27,7 +27,7 @@
   background-color: #d6edff;
   width: var(--app-width);
   max-width: 100vw;
-  
+
   .header__close-button {
     background-color: #b4dfff;
   }
@@ -55,63 +55,88 @@
 }
 
 /* cards */
-.pilot-electric {
+.pilot-cow {
   border: 1px solid #b3a3a3a3;
   border-width: 0 0 1px 0;
 }
-.pilot-green {
+.pilot-shrimp {
   border: 1px solid #b3a3a3a3;
   border-width: 0 1px 1px 1px;
 }
-.pilot-bio {
+.pilot-dropAI {
   border: 1px solid #b3a3a3a3;
   border-width: 0 1px 1px 0;
 }
-.pilot-kfas {
+.pilot-cup {
   border: 1px solid #b3a3a3a3;
   border-width: 0 0 1px 0;
 }
-.pilot-university {
+.pilot-wool {
   border: 1px solid #b3a3a3a3;
   border-width: 0;
 }
-.pilot-solar {
+.pilot-homeDrop {
   border: 1px solid #b3a3a3a3;
   border-width: 0 1px 0 1px;
 }
-.pilot-co {
+.pilot-dropSnow {
   border: 1px solid #b3a3a3a3;
   border-width: 0 1px 0 0px;
 }
-.pilot-service {
+.pilot-solar {
   border: 1px solid #b3a3a3a3;
   border-width: 0 0px 0 0px;
 }
 
-
+.pilot-electric {
+  border: 1px solid #b3a3a3a3;
+  border-width: 1px 0px 1px 0px;
+}
+.pilot-green {
+  border: 1px solid #b3a3a3a3;
+  border-width: 1px 1px 1px 1px;
+}
+.pilot-bio {
+  border: 1px solid #b3a3a3a3;
+  border-width: 1px 1px 1px 0px;
+}
+.pilot-smartHat {
+  border: 1px solid #b3a3a3a3;
+  border-width: 1px 0px 1px 0px;
+}
+.pilot-kfas {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0px 1px 0 0px;
+}
 
 @media screen and (max-width: 1033px) {
   .container-pilotProjects {
     width: 732px;
   }
-  .pilot-bio {
+  .pilot-dropAI {
     border-width: 0 0 1px 0;
   }
-  .pilot-kfas {
+  .pilot-cup {
     border: 1px solid #b3a3a3a3;
     border-width: 0 0 1px 0;
   }
-  .pilot-university {
+  .pilot-wool {
     border-width: 0 1px 1px 1px;
   }
-  .pilot-solar {
+  .pilot-homeDrop {
     border-width: 0 0 1px 0;
   }
-  .pilot-co {
+  .pilot-dropSnow {
     border-width: 0;
   }
-  .pilot-service {
+  .pilot-solar {
     border-width: 0 1px;
+  }
+  .pilot-electric {
+    border-width: 0;
+  }
+  .pilot-green {
+    border-width: 1px 1px 1px 0;
   }
 }
 @media screen and (max-width: 731px) {
@@ -122,23 +147,29 @@
     width: 500px;
   }
 
-  .pilot-green {
+  .pilot-shrimp {
     border-width: 0 0 1px 1px;
   }
-  .pilot-bio {
+  .pilot-dropAI {
     border-width: 0 0 1px 0;
   }
-  .pilot-kfas {
+  .pilot-cup {
     border-width: 0 0 1px 1px;
   }
-  .pilot-university {
+  .pilot-wool {
     border-width: 0 0 1px 0;
+  }
+  .pilot-homeDrop {
+    border-width: 0 0 1px 1px;
   }
   .pilot-solar {
-    border-width: 0 0 1px 1px;
-  }
-  .pilot-service {
     border-width: 0 0 0 1px;
+  }
+  .pilot-electric {
+    border-width: 1px 0 0 0;
+  }
+  .pilot-green {
+    border-width: 1px 0 0 1px;
   }
 }
 
@@ -148,16 +179,21 @@
     flex-direction: column;
     align-items: center;
   }
+  .pilot-cow,
+  .pilot-shrimp,
+  .pilot-dropAI,
+  .pilot-cup,
+  .pilot-wool,
+  .pilot-homeDrop,
+  .pilot-dropSnow,
+  .pilot-solar,
   .pilot-electric,
   .pilot-green,
-  .pilot-bio,
-  .pilot-kfas,
-  .pilot-university,
-  .pilot-solar,
-  .pilot-co {
+  .pilot-smartHat,
+  .pilot-bio {
     border-width: 0 0px 1px 0px;
   }
-  .pilot-service {
+  .pilot-kfas {
     border-width: 0;
   }
 

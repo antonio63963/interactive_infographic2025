@@ -8,14 +8,13 @@
   padding: 38px 0 60px 0;
 
   .divider-vertical {
-    height: 600px;
+    height: 930px;
   }
 }
 .content-science-curration {
   display: flex;
   flex-direction: column;
   margin: 30px 20px 0 clamp(20px, 10rem, 55px);
-
 }
 /* CHART */
 .science-curation-binefic-titile {
@@ -36,7 +35,7 @@
 
     .binefic-item-s-cur {
       height: 17px;
-      background: #FFB455;
+      background: #ffb455;
       transition: all 1s ease-in-out;
       margin: 8px 0;
       transform-origin: right;
