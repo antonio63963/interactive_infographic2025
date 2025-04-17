@@ -40,34 +40,28 @@
 }
 
 /* cards */
-.assigned-camel {
-  border: 1px solid #b3a3a3a3;
-  border-width: 0 0 1px 0;
-}
-.assigned-space {
-  border: 1px solid #b3a3a3a3;
-  border-width: 0 1px 1px 1px;
-}
-.assigned-energy {
+.assigned-search {
   border: 1px solid #b3a3a3a3;
   border-width: 0 1px 1px 0;
 }
-.assigned-secure {
+.assigned-camel {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 1px 1px 0px;
+}
+.assigned-circleEnergy {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 1px 1px 0;
+}
+.assigned-electricConnection {
   border: 1px solid #b3a3a3a3;
   border-width: 0 0 1px 0;
 }
-.assigned-transition {
+
+.assigned-space {
   border: 1px solid #b3a3a3a3;
-  border-width: 0;
+  border-width: 0 1px 0 0;
 }
-.assigned-trash {
-  border: 1px solid #b3a3a3a3;
-  border-width: 0 1px 0 1px;
-}
-.assigned-house {
-  border: 1px solid #b3a3a3a3;
-  border-width: 0 1px 0 0px;
-}
+
 .assigned-service {
   border: 1px solid #b3a3a3a3;
   border-width: 0 0px 0 0px;
@@ -77,24 +71,18 @@
   .container-assignedProjects {
     width: 732px;
   }
-  .assigned-energy {
+  .assigned-camel {
+    border-width: 0 1px 1px 0;
+  }
+  .assigned-circleEnergy {
     border-width: 0 0 1px 0;
   }
-  .assigned-secure {
+  .assigned-electricConnection {
     border: 1px solid #b3a3a3a3;
-    border-width: 0 0 1px 0;
-  }
-  .assigned-transition {
-    border-width: 0 1px 1px 1px;
-  }
-  .assigned-trash {
-    border-width: 0 0 1px 0;
-  }
-  .assigned-house {
     border-width: 0 1px 0 0;
   }
-  .assigned-service {
-    border-width: 0 1px;
+  .assigned-space {
+    border-width: 0 1px 0 0;
   }
 }
 @media screen and (max-width: 731px) {
@@ -104,24 +92,17 @@
   .container-assignedProjects {
     width: 500px;
   }
-
+  .assigned-camel {
+    border-width: 0 0 1px 0;
+  }
+  .assigned-circleEnergy {
+    border-width: 0 1px 1px 0;
+  }
+  .assigned-electricConnection {
+    border-width: 0 0 1px 0;
+  }
   .assigned-space {
-    border-width: 0 0 1px 1px;
-  }
-  .assigned-energy {
-    border-width: 0 0 1px 0;
-  }
-  .assigned-secure {
-    border-width: 0 0 1px 1px;
-  }
-  .assigned-transition {
-    border-width: 0 0 1px 0;
-  }
-  .assigned-trash {
-    border-width: 0 0 1px 1px;
-  }
-  .assigned-service {
-    border-width: 0 0 0 1px;
+    border-width: 0 1px 0 0;
   }
 }
 
@@ -131,15 +112,13 @@
     flex-direction: column;
     align-items: center;
   }
-  .assigned-camel,
+  .assigned-search,
   .assigned-space,
-  .assigned-energy,
-  .assigned-secure,
-  .assigned-transition,
-  .assigned-trash {
+  .assigned-circleEnergy,
+  .assigned-electricConnection {
     border-width: 0 0px 1px 0px;
   }
-  .assigned-house {
+  .assigned-space {
     border-width: 0;
   }
 
