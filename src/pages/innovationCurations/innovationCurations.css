@@ -87,19 +87,19 @@
     }
     .enrolment {
       background-color: var(--color-orange);
-      width: 95%;
+      width: 80%;
     }
     .local {
       background-color: var(--color-yellow);
-      width: 80%;
+      width: 45%;
     }
     .programs {
       background-color: #569fd6;
-      width: 25%;
+      width: 35%;
     }
     .abroad {
       background-color: #569fd6;
-      width: 8%;
+      width: 25%;
     }
   }
 

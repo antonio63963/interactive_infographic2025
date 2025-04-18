@@ -18,7 +18,7 @@ mixin InnovationCurationsPage()
     .container-innovationCurations 
       .sidebar-vertical(class="sidebar-innovation-curation sidebar-three-items")
         +sidebarIconItem({
-          num: 70, 
+          num: 74, 
           title: 'Trainings',
           color: '#569FD6', 
           icon: 'education'
@@ -30,13 +30,13 @@ mixin InnovationCurationsPage()
           icon: 'folderStarBlue'
           })(class="sidebar-vertical-item moveToRight")
         +sidebarIconItem({
-          num: 1116, 
+          num: 1350, 
           title: 'Beneficiaries',
           color: '#569FD6', 
           icon: 'persons'
           })(class="sidebar-vertical-item moveToRight")
         +sidebarIconItem({
-          num: '844K', 
+          num: '1.02M', 
           title: 'KD Amount Approved',
           color: '#569FD6', 
           icon: 'kdBlue'
@@ -60,35 +60,35 @@ mixin InnovationCurationsPage()
               .bar.abroad.scaleX
           .description
             +barChartItem({
-              title: 'LEE Outreach (Speaker Event)',  
+              title: 'Local Executive Education-Speaker events',  
               percent: '100%', 
               color: '#F47D39',
-              num: 367
+              num: 513
               })(class="description-item")
             +barChartItem({
               title: 'Open Enrolment', 
               percent: '85%',
               color: '#F47D39',
-              num: 305
+              num: 380
 
               })(class="description-item")
             +barChartItem({
               title: 'Local Executive Education',  
               percent: '36%', 
               color: '#FFB455',
-              num : 235,
+              num : 215,
               })(class="description-item")
             +barChartItem({
               title: 'Custom Programs',  
               percent: '40%', 
               color: '#569FD6',
-              num: 125
+              num: 152
               })(class="description-item")
             +barChartItem({
               title: 'Abroad Executive Eduction', 
               percent: '3%', 
               color: '#569FD6',
-              num: 84
+              num: 90
               })(class="description-item")
         .second-row
           section.gender-section
@@ -96,8 +96,8 @@ mixin InnovationCurationsPage()
             .gender-col
               +genderChart({canvasId: "innovation-curations-gender-1"})
               .gender-col
-                +twoValuesRow({val1: '63', isOrange: false})(class="inno-curations-value")
-                +twoValuesRow({val1: '37', isOrange: true})(class="inno-curations-value")
+                +twoValuesRow({val1: '65', isOrange: false})(class="inno-curations-value")
+                +twoValuesRow({val1: '35', isOrange: true})(class="inno-curations-value")
           section.benefic-section
             h2.benefic-title Beneficiaries by Sector 
             span.benefic-subtitle (Trainings courses)
@@ -115,38 +115,38 @@ mixin InnovationCurationsPage()
                 data-value="14"
               ) 
               .chart-item(
-                style={"background-color":"#969696", width: 0},
+                style={"background-color":"#00476B", width: 0},
                 data-value="4"
               ) 
               .chart-item(
-                style={"background-color":"#00476B", width: 0},
+                style={"background-color":"#969696", width: 0},
                 data-value="3"
               )
             .benefic-chart-description 
               .benefic-chart-col
                 +chartInfoIcons({
-                  digit: 656, 
+                  digit: 774, 
                   text: 'Private'
                   })
                   img(src=require('../../assets/svg/personYellow.svg')) 
                 +chartInfoIcons({
-                  digit: 14, 
+                  digit: 8, 
                   text: 'KFAS and Centers'
                   })
                   img(src=require('../../assets/svg/logo50.svg')) 
                 +chartInfoIcons({
                   digit: 3, 
-                  text: 'NGO'
+                  text: 'General Public'
                   })
                   img(src=require('../../assets/svg/globus.svg')) 
               .benefic-chart-col
                 +chartInfoIcons({
-                  digit: 54, 
+                  digit: 35, 
                   text: 'Public'
                   })
                   img(src=require('../../assets/svg/groupBlue.svg'))
                 +chartInfoIcons({
-                  digit: 4, 
+                  digit: 2, 
                   text: 'Academic / Research'
                   })
                   img(src=require('../../assets/svg/hatGrey.svg'))    
