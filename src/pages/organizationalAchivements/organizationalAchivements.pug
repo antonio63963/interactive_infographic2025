@@ -7,7 +7,7 @@ include ../../common/ui/organizationalColumn/organizationalColumn.pug
 
 mixin OrganizationalAchivementsPage()
   +popupPage({
-        title: 'Organizational Highlights', 
+        title: 'Organizational Achievements', 
         closeClass: 'organizationalAchivementsClose',
         headerColor: '#D6EDFF',
         buttonColor: '#B4DFFF'
@@ -17,29 +17,29 @@ mixin OrganizationalAchivementsPage()
         .right-col
           section.job.job-anime 
             .num-wrapper
-             span.num-job.anime-text(data-value="24") 0
+             span.num-job.anime-text(data-value="19") 0
              img.num-job-img(src=require("../../assets/svg/caseSound.svg"))
             h2.title-job job announcements
           .right-col-bottom.move-up
             +organizationalRow({
-              num: 702,
-              step: 50,
+              num: 172,
+              step: 10,
               title: 'candidates',
               subtitle: 'were interviewed'
             })(class="org-achivements-row")
               img.icon(src=require("../../assets/svg/peopleSpeak.svg"))
             +organizationalRow({
-              num: 45,
+              num: 20,
               title: 'Kuwaitis',
               subtitle: 'were hired'
             })(class="org-achivements-row")
               img.icon(src=require("../../assets/svg/peopleChecked.svg"))
             +organizationalRow({
-              num: 62,
+              num: 78,
               title: 'Kuwaitization',
               subtitle: '(professional level and above)',
               isPercent: true,
-              num2: 17,
+              num2: 13.2,
               title2: 'Turnover rate',
               isPercent2: true,
             })(class="org-achivements-row")
@@ -55,9 +55,9 @@ mixin OrganizationalAchivementsPage()
             img.courses-img(src=require("../../assets/svg/hatBooks.svg"))
           +organizationalColumn({
             title: 'Trained employees',
-            num: 120,
+            num: 101,
             numVirtual: 3,
-            step: 10
+            step: 13
           })(class="org-achivements-col")
             img.courses-img(src=require("../../assets/svg/peopleGroup.svg"))
           

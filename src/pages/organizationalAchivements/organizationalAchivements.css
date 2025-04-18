@@ -36,8 +36,9 @@
         height: 88px;
 
         .num-job {
+          text-align: end;
           color: var(--color-orange);
-          font-size: 96px;
+          font-size: 132px;
           line-height: 96px;
           font-weight: 700;
         }

@@ -23,7 +23,7 @@
       }
   
       .amount {
-        width: 62px;
+        width: 70px;
         min-width: 62px;
         margin-left: 16px;
         color: var(--color-yellow);
