@@ -7,6 +7,10 @@ mixin genderBreakdown(options)
         .gender-breakdown-svg-wrapper
           img.gender-breakdown-svg(src=require("../../assets/svg/gender-male-35.svg"))
           img.gender-breakdown-vertical-svg(src=require("../../assets/svg/gender-male-35-vertical.svg"))
+      else if(maleVa1 == 55)
+        .gender-breakdown-svg-wrapper
+          img.gender-breakdown-svg(src=require("../../assets/svg/gender-male-55.svg"))
+          img.gender-breakdown-vertical-svg(src=require("../../assets/svg/gender-male-55-vertical.svg"))
       else
         .gender-breakdown-svg-wrapper
           img.gender-breakdown-svg(src=require("../../assets/svg/gender.svg"))

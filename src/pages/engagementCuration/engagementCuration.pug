@@ -1,0 +1,80 @@
+include ../../common/ui/appHeaderDetails/appHeaderDetails.pug
+include ../../common/ui/sidebarIconItem/sidebarIconItem.pug
+include ../../common/ui/popupPage/popupPage.pug
+include ../../common/ui/labelWithColor/labelWithColor.pug
+include ../../common/ui/lineWithDotInfo/lineWithDotInfo.pug
+include ../../common/ui/barChartItem58/barChartItem58.pug
+
+
+mixin EngagementCurationPage()
+  +popupPage({
+    title: 'Engagement in Science - Curation', 
+    closeClass: 'engagementCurationClose',
+    headerColor: '#D6EDFF',
+    buttonColor: '#B4DFFF'
+    })(class="engagementCurationPage")
+
+    .container-engagementCuration 
+      .sidebar-horizontal(class="sidebar-engagement-curation sidebar-three-items sb-engagement-curr-flex")
+        +sidebarIconItem({
+          num: 3, 
+          title: 'Training Courses',
+          color: '#569FD6', 
+          icon: 'training'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: 87, 
+          title: 'Applicants',
+          color: '#569FD6', 
+          icon: 'arrowDoc'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: '89.9k', 
+          title: 'Certificates Awarded',
+          color: '#569FD6', 
+          icon: 'prize'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: '75k', 
+          title: 'Beneficiaries',
+          color: '#569FD6', 
+          icon: 'persons'
+          })(class="sidebar-vertical-item moveToRight")
+        +sidebarIconItem({
+          num: '89.9k', 
+          title: 'Amount Approved',
+          color: '#569FD6', 
+          icon: 'kdBlue'
+          })(class="sidebar-vertical-item moveToRight")
+      .divider-horizontal
+
+      .engagement-curation-content 
+        h2.engagement-curation-title Events Details 
+        .chart 
+          .engagement-curation-binefic-graph
+            .item-s-cur.scaleX.certified
+            .item-s-cur.scaleX.certified2
+            .item-s-cur.scaleX.certified3
+            .item-s-cur.scaleX.certified4
+          .engagement-curation-binefic-info
+            +barChartItem58({
+              title: 'Certified Training (RENAC) الدورات التدريبية عن الطاقة المتجددة و كفاءة الطاقة', 
+              num: 31,  percent: '100%'
+              })(class="detail moveUp")
+            +barChartItem58({
+              title: 'مشروع تدريب وتوظيف عدد (20) من الأشخاص ذوي الإعاقة ضمن حملة شركاء لتوظيفهم', 
+              num: 20,  
+              percent: '65%'
+              })(class="detail moveUp")
+            +barChartItem58({
+              title: 'Certified Training (RENAC) الدورات التدريبية عن الطاقة المتجددة و كفاءة الطاقة', 
+              num: 19,  
+              percent: '64%'
+              })(class="detail moveUp")
+            +barChartItem58({
+              title: 'دورة تدريبية "مدقق طاقة معتمد', 
+              num: 5,  
+              percent: '17%'
+              })(class="detail moveUp")
+        
+        +genderBreakdown({maleVal1: 55, femaleVal1: 45})
