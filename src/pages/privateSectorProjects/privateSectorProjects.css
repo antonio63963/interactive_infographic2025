@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  width: 488px;
+  width: 732px;
   max-width: calc(100vw - 40px);
   .privateSector-project-label {
     margin-right: 50px;
@@ -29,25 +29,32 @@
 }
 
 /* cards */
-.privateSector-dev {
+.privateSector-microb {
   border: 1px solid #b3a3a3a3;
   border-width: 0;
 }
-.privateSector-organic {
+.privateSector-react {
+  border: 1px solid #b3a3a3a3;
+  border-width: 0 0 0 1px;
+}
+.privateSector-brik {
   border: 1px solid #b3a3a3a3;
   border-width: 0 0 0 1px;
 }
 
-@media screen and (max-width: 487px) {
+@media screen and (max-width: 670px) {
   .container-privateSectorProjects {
     max-width: 280px;
     flex-direction: column;
     align-items: center;
   }
-  .privateSector-dev {
+  .privateSector-microb {
     border-width: 0 0px 1px 0px;
   }
-  .privateSector-organic {
+  .privateSector-react {
+    border-width: 0 0 1px 0;
+  }
+  .privateSector-brik {
     border-width: 0;
   }
   .privateSector-projects-labels {

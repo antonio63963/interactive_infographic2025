@@ -16,24 +16,32 @@ mixin PrivateSectorProjectsPage()
 
     .content-privateSector-projects
       .privateSector-projects-labels 
-        +labelWithColor({color: '#F47D39', text: 'Completed Project'})
+        +labelWithColor({color: '#7DC0F1', text: 'New projects'})
       .container-privateSectorProjects
         +card({
           canvasId: 'privateSector-project-1', 
-          percent: '100%', 
-          color: '#F47D39', 
-          description: 'Development of a new range of No Added Sugar products', 
-          totalAmount: '45K'
-          })(class="privateSector-dev")
-          img(src=require('../../assets/svg/privateSectorProjects/dev.svg'))
+          percent: '30%', 
+          color: '#7DC0F1', 
+          description: 'Antimicrobial Plastics', 
+          totalAmount: '50K'
+          })(class="privateSector-microb")
+          img(src=require('../../assets/svg/privateSectorProjects/microb.svg'))
         +card({
           canvasId: 'privateSector-project-2', 
-          percent: '100%', 
-          color: '#F47D39', 
-          description: 'Beyond Organic Vertical Farm', 
-          totalAmount: '45K'
-          })(class="privateSector-organic")
-          img(src=require('../../assets/svg/privateSectorProjects/organic.svg'))
+          percent: '50%', 
+          color: '#7DC0F1', 
+          description: 'Using quantum technology to secure digital communications', 
+          totalAmount: '70.1K'
+          })(class="privateSector-react")
+          img(src=require('../../assets/svg/privateSectorProjects/react.svg'))
+        +card({
+          canvasId: 'privateSector-project-3', 
+          percent: '40%', 
+          color: '#7DC0F1', 
+          description: 'Reinforced Concrete', 
+          totalAmount: '5K'
+          })(class="privateSector-brik")
+          img(src=require('../../assets/svg/privateSectorProjects/brik.svg'))
 
 
 

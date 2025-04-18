@@ -13,16 +13,22 @@ const privateSectorProjectsClose = document.querySelector(
 
 const privateSectorProjectsCharts = [
   {
-    title: "dev",
+    title: "microb",
     canvas: document.querySelector("#privateSector-project-1"),
-    values: [100, 0],
-    valuesColors: ["#F47D39", "#E0E0E0"],
+    values: [30, 70],
+    valuesColors: ["#7DC0F1", "#E0E0E0"],
   },
   {
-    title: "organic",
+    title: "react",
     canvas: document.querySelector("#privateSector-project-2"),
-    values: [100, 0],
-    valuesColors: ["#F47D39", "#E0E0E0"],
+    values: [50, 50],
+    valuesColors: ["#7DC0F1", "#E0E0E0"],
+  },
+  {
+    title: "brik",
+    canvas: document.querySelector("#privateSector-project-3"),
+    values: [40, 60],
+    valuesColors: ["#7DC0F1", "#E0E0E0"],
   },
 ];
 
