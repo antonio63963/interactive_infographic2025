@@ -57,8 +57,8 @@ function animationInnovationGrant() {
     }, idx * 100 + 50);
   });
 
-  animatedCounter({elem: firstNumber, numFrom: 0, numTo: 55, step: 5, interval: 50});
-  animatedCounter({elem: secondNumber, numFrom: 0, numTo: 30, step: 2})
+  animatedCounter({elem: firstNumber, numFrom: 0, numTo: 82, step: 5, interval: 50});
+  animatedCounter({elem: secondNumber, numFrom: 0, numTo: 9, step: 2})
 
   innovationBars.forEach((item, idx) => {
     const t = setTimeout(() => {

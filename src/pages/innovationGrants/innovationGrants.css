@@ -53,12 +53,12 @@
       background-color: var(--color-orange);
       transition: all 1s linear;
       margin-right: 8px;
-      width: 65%;
+      width: 88%;
     }
     .chart-second-bar {
       background-color: var(--color-blue);
       transition: all 0.5s linear 1s;
-      width: 35%;
+      width: 12%;
     }
   }
   .binefics-chart-info {

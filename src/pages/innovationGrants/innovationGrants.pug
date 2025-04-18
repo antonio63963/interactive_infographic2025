@@ -17,17 +17,17 @@ mixin InnovationGrantPage()
     .container-innovation-grant 
       .sidebar-vertical.sidebar-three-items 
         +sidebarIconItem({
-          num: 85, title: 'Applications Requested', 
+          num: 91, title: 'Applications Requested', 
           color: '#F36D20', 
           icon: 'personInputOrange'
           })(class="sidebar-vertical-item moveToRight")
         +sidebarIconItem({
-          num: 31, 
+          num: 35, 
           title: 'Grants Provided', 
           color: '#F36D20', icon: 'personCheckedOrange'
           })(class="sidebar-vertical-item moveToRight")
         +sidebarIconItem({
-          num: '21.4k', 
+          num: '40K', 
           title: 'KD Amount', 
           color: '#F36D20', 
           icon: 'kdOrange'
@@ -35,7 +35,7 @@ mixin InnovationGrantPage()
       .divider-vertical 
 
       .innovation-grant-binefics 
-        h2.binefics-title Number of Beneficiaries
+        h2.binefics-title Applicants
         .binefics-chart
           .binefics-chart-graph
             .chart-first-bar.bar.scaleX
@@ -49,15 +49,15 @@ mixin InnovationGrantPage()
             })
             +labelWithColor({
               color: '#69AADB',
-              text: 'Applied Individually (students, graduates, etc)'
+              text: 'Applied Individually'
             })(class="individ-label")
 
         h2.gender-title Gender Distribution
         .gender-row
           +genderChart({canvasId: "innovation-grants-gender-1"})
           .gender-col
-            +twoValuesRow({val1: '63', isOrange: false})(class="inno-grant-value")
-            +twoValuesRow({val1: '37', isOrange: true})(class="inno-grant-value")
+            +twoValuesRow({val1: '83', isOrange: false})(class="inno-grant-value")
+            +twoValuesRow({val1: '17', isOrange: true})(class="inno-grant-value")
 
 
 
