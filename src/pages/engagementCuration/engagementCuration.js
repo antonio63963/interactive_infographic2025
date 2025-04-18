@@ -36,7 +36,6 @@ engagementCurationClose.addEventListener("click", closeEngagementCurationPage);
 const sidebarIcons = document.querySelectorAll(
   ".engagementCurationPage .sidebar-vertical-item"
 );
-print("hlhoho", sidebarIcons);
 const engagementCurationBars = document.querySelectorAll(
   ".engagement-curation-content .item-s-cur"
 );
