@@ -17,7 +17,7 @@ mixin EngagementCurationPage()
     .container-engagementCuration 
       .sidebar-horizontal(class="sidebar-engagement-curation sidebar-three-items sb-engagement-curr-flex")
         +sidebarIconItem({
-          num: 3, 
+          num: 4, 
           title: 'Training Courses',
           color: '#569FD6', 
           icon: 'training'
@@ -29,7 +29,7 @@ mixin EngagementCurationPage()
           icon: 'arrowDoc'
           })(class="sidebar-vertical-item moveToRight")
         +sidebarIconItem({
-          num: '89.9k', 
+          num: '24', 
           title: 'Certificates Awarded',
           color: '#569FD6', 
           icon: 'prize'
@@ -77,4 +77,4 @@ mixin EngagementCurationPage()
               percent: '17%'
               })(class="detail moveUp")
         
-        +genderBreakdown({maleVal1: 55, femaleVal1: 45})
+        +genderBreakdown({maleVal1: 45, femaleVal1: 55})
