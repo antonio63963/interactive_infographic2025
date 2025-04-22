@@ -74,6 +74,7 @@
   .left-col {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     transition: all 1s ease-in-out;
 
     .org-achivements-col {

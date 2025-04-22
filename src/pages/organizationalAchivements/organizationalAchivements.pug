@@ -24,7 +24,7 @@ mixin OrganizationalAchivementsPage()
             +organizationalRow({
               num: 172,
               step: 10,
-              title: 'candidates',
+              title: 'Candidates',
               subtitle: 'were interviewed'
             })(class="org-achivements-row")
               img.icon(src=require("../../assets/svg/peopleSpeak.svg"))
@@ -47,16 +47,16 @@ mixin OrganizationalAchivementsPage()
 
 
         .left-col.trainings-anime 
-          +organizationalColumn({
-            title: 'Training courses',
-            num: 68,
-            step: 6
-          })(class="org-achivements-col")
-            img.courses-img(src=require("../../assets/svg/hatBooks.svg"))
+          //- +organizationalColumn({
+          //-   title: 'Training courses',
+          //-   num: 68,
+          //-   step: 6
+          //- })(class="org-achivements-col")
+          //-   img.courses-img(src=require("../../assets/svg/hatBooks.svg"))
           +organizationalColumn({
             title: 'Trained employees',
             num: 101,
-            numVirtual: 3,
+            numVirtual: 101,
             step: 13
           })(class="org-achivements-col")
             img.courses-img(src=require("../../assets/svg/peopleGroup.svg"))
