@@ -14,11 +14,17 @@
     padding-left: 12px;
     display: flex;
     width: 60%;
+    min-width: 60%;
     align-items: center;
 
     .job-title {
       font-weight: 500;
       font-size: 14px;
     }
+    .subtitle {
+      font-weight: normal;
+      font-size: 14px;
+    }
   }
 }
+

@@ -7,7 +7,7 @@ include ../../common/ui/prizeRow/prizeRow.pug
 
 mixin PrizesWinnersPage()
   +popupPage({
-    title: '2022 Prize Winners Announcement',
+    title: 'Prizes Winners',
     closeClass: 'prizesWinnersClose',
     headerColor: '#D6EDFF',
     buttonColor: '#B4DFFF'
@@ -16,67 +16,133 @@ mixin PrizesWinnersPage()
     .container-prizesWinners
       section.prize-section 
         +prizeLabel({
-        title: 'Jaber Al-Ahmed Prize 2022 winners',
-        color: '#569FD6',
-        })
-        +prizeRow({
-          person: 'Dr. Dari AI Huwail',
-          jobTitle: 'Natural Sciences and Mathematics'
-        })(class="prize-person")
-        +prizeRow({
-          person: 'Dr. Yousef AI Osairi',
-          jobTitle: 'Engineering Sciences'
-        })(class="prize-person")
-        +prizeRow({
-          person: 'Dr. Mohammad Jamal',
-          jobTitle: 'Medical Sciences and Allied Health Sciences'
-        })(class="prize-person")
-        +prizeRow({
-          person: 'Dr. Abdullah AI Shebli',
-          jobTitle: 'Social Sciences and Humanities'
-        })(class="prize-person")
-        +prizeRow({
-          person: 'Dr. Abdullah Sultan',
-          jobTitle: 'Administration and Economics'
-        })(class="prize-person")
-      //- 2 section
-      section.prize-section 
-        +prizeLabel({
-        title: 'Al-Sumait Prize 2022 winners',
-        color: '#F47D39',
-        })
-        +prizeRow({
-          person: 'Dr. Catherine Nakalembe',
-          jobTitle: 'Food Security'
-        })(class="prize-person")
-        +prizeRow({
-          person: 'Dr. Aggrey Ambali',
-          jobTitle: 'Food Security'
-        })(class="prize-person")
-      //- 3 section  
-      section.prize-section 
-        +prizeLabel({
-        title: 'Kuwait Prize 2022 winners',
+        title: 'Kuwait Prize 2022',
         color: '#FFB455',
         })
         +prizeRow({
           person: 'Professor Fowzan Al Kuraya',
-          jobTitle: 'Fundamental Sciences'
+          jobTitle: 'Fundamental Sciences',
+          subtitle: '(Basic Medical Sciences)',
         })(class="prize-person")
         +prizeRow({
-          person: 'Professor Dr. Said Yaktine',
-          jobTitle: 'Humanities, arts and Literature'
+          person: 'Professor Said Yaktine',
+          jobTitle: 'Arts & Literature',
+          subtitle: '(Arabic Literature & Art)'
         })(class="prize-person")
         +prizeRow({
-          person: 'Professor Dr. Khalil Amine',
-          jobTitle: 'Fundamental Sciences'
+          person: 'Professor Khalil Amine',
+          jobTitle: 'Applied Sciences',
+          subtitle: '(Clean & Sustainable Energy Technology)'
         })(class="prize-person")
         +prizeRow({
-          person: 'Dr. Elie Tamer',
-          jobTitle: 'Economics and Social Sciences'
+          person: 'Professor Elie Tamer',
+          jobTitle: 'Economics & Social Sciences',
+          subtitle: '(Economics, Financial & Banking Sciences)'
         })(class="prize-person")
         +prizeRow({
-          person: 'Professor Mohamed Mattoussi',
-          jobTitle: 'Emerging Interdisciplinary Sciences'
+          person: 'Professor Mohammad Mattoussi',
+          jobTitle: 'Emerging Interdisciplinary Sciences',
+          subtitle: '(Nanoscience & Nanotechnology & Applications)'
         })(class="prize-person")
-        
+      //- 2 section
+      section.prize-section 
+        +prizeLabel({
+        title: 'Kuwait Prize 2023',
+        color: '#F47D39',
+        })
+        +prizeRow({
+          person: 'Professor Nashaat Nassar',
+          jobTitle: 'Fundamental Sciences',
+          subtitle: '(Chemistry)'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Professor Mohamed Eddaoudi',
+          jobTitle: 'Fundamental Sciences',
+          subtitle: '(Chemistry)'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Professor Mohamed Sultan',
+          jobTitle: 'Applied Sciences',
+          subtitle: '(Hydrology)'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Professor Dina Katabi',
+          jobTitle: 'Emerging Interdisciplinary sciences',
+          subtitle: '(Artificial Intelligence & Robotics)'
+        })(class="prize-person")
+      //- 3 section  
+      section.prize-section 
+        +prizeLabel({
+        title: 'Jaber Al-Ahmad Prize for Young Researchers 2022',
+        color: '#569FD6',
+        })
+        +prizeRow({
+          person: 'Dr. Mohamed Haider Jamal',
+          jobTitle: 'Medical Sciences & Allied Health Sciences'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Dari Adel Al-Huwail',
+          jobTitle: 'Natural & Mathematical sciences'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Yousef Y. AlAsseri',
+          jobTitle: 'Engineering Sciences'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Abdullah J. Sultan',
+          jobTitle: 'Administrative Sciences & Economics'
+        })(class="prize-person")
+        +prizeRow({
+          person: 'Dr. Abdullah R. AlShebli',
+          jobTitle: 'Social & Human sciences'
+        })(class="prize-person")
+      section.prize-section 
+        +prizeLabel({
+        title: 'Jaber Al-Ahmad Prize for Young Researchers 2023',
+        color: '#FFB455',
+        })
+        +prizeRow({
+          person: 'Dr. Zaid I. AlMarzooq',
+          jobTitle: 'Natural & Mathematical sciences'
+        })(class="prize-person")  
+        +prizeRow({
+          person: 'Dr. Fatema S. Al-Rashed',
+          jobTitle: 'Biological Sciences'
+        })(class="prize-person")  
+        +prizeRow({
+          person: 'Dr. Ammar M. Bahman',
+          jobTitle: 'Engineering Sciences'
+        })(class="prize-person")  
+        +prizeRow({
+          person: 'Dr. Fahad A. AlZumai',
+          subtitle: '(missing area he won in)'
+        })(class="prize-person")  
+        +prizeRow({
+          person: 'Prof. Amal Abdulwahab AlSaleh',
+          jobTitle: 'Social & Human sciences'
+        })(class="prize-person")  
+      section.prize-section 
+        +prizeLabel({
+        title: 'Al-Sumait Prize for the African Development 2022',
+        color: '#F47D39',
+        })
+        +prizeRow({
+          person: 'Dr. Catherine Nakalembe',
+          jobTitle: 'In the field of',
+          subtitle: ' (Food Security)'
+        })(class="prize-person")  
+        +prizeRow({
+          person: 'African Agricultural Technology(Foundation AATF)', 
+          jobTitle: 'In the field of',
+          subtitle: ' (Food Security)'
+        })(class="prize-person")
+      section.prize-section 
+        +prizeLabel({
+        title: 'Al-Sumait Prize for the African Development 2023',
+        color: '#569FD6',
+        })
+        +prizeRow({
+          person: 'The Campaign for Female Education (CAMFED)',
+          jobTitle: 'In the field of',
+          subtitle: ' (Education)'
+        })(class="prize-person")

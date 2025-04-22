@@ -1,6 +1,10 @@
 mixin prizeRow(options)
-  -const {person, jobTitle} = options || {};
+  -const {person, jobTitle, subtitle} = options || {};
   .prize-row(class!= attributes.class)
-    span.person= person 
+    .person= person 
     .job-title-wrapper 
-      span.job-title= jobTitle 
+      p
+        if(jobTitle != null)
+          span.job-title= jobTitle 
+        if(subtitle != null)
+          span.subtitle= subtitle
