@@ -63,24 +63,27 @@
         left: 35%;
       }
       .yellow {
-        top: 82.5%;
+        /* top: 82.5%; */
+        bottom: 30px;
         right: 16%;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: normal;
       }
       .dark {
-        bottom: 0%;
+        /* bottom: 0.5%; */
+        bottom: 2px;
         right: 16%;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: normal;
       }
-      .grey {
+      /* .grey {
         bottom: 0.5%;
         left: 11%;
         font-size: 15px;
-      }
+      } */
       .light-blue {
-        bottom: 0.5%;
+        /* bottom: 0.5%; */
+        bottom: 2px;
         right: 0.5%;
         font-size: 15px;
         font-weight: normal;
@@ -164,7 +167,7 @@
     .training + .bar-value {
       margin-left: -80%;
     }
-    .competitions + .bar-value {
+    .others + .bar-value {
       margin-left: -25%;
     }
     .fairs + .bar-value {
@@ -177,33 +180,29 @@
       margin-left: -3%;
     }
 
-    .workshops {
-      background-color: #003d63;
-      width: 100%;
-    }
     .conference {
       background-color: var(--color-orange);
-      width: 95%;
+      width: 100%;
+    }
+    .workshops {
+      background-color: #ffb455;
+      width: 30%;
     }
     .training {
-      background-color: var(--color-yellow);
-      width: 80%;
+      background-color: #003d63;
+      width: 20%;
     }
-    .competitions {
+    .others {
       background-color: #8dc6e2;
-      width: 25%;
-    }
-    .fairs {
-      background-color: #3f91ba;
-      width: 8%;
+      width: 12%;
     }
     .seminars {
       background-color: #a3a3a3;
-      width: 8%;
+      width: 6%;
     }
-    .festivals {
-      background-color: #d1d1d1;
-      width: 3%;
+    .fairs {
+      background-color: #569FD6;
+      width: 6%;
     }
   }
 
