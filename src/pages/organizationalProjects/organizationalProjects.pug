@@ -21,6 +21,44 @@ mixin OrganizationalProjectsPage()
         +labelWithColor({color: '#F47D39', text: 'Completed Project'})
       .container-organizationalProjects
         +card({
+          canvasId: 'organizational-project-01', 
+          percent: '100%', 
+          color: '#7DC0F1', 
+          description: 'Develop KFAS Strategy (2025-2029)', 
+          totalAmount: '?',
+          totalText: 'Project Cost:'
+          })(class="develop-strategy")
+          img(src=require('../../assets/svg/organizationalProjects/develop_strategy.svg'))
+        +card({
+          canvasId: 'organizational-project-02', 
+          percent: '100%', 
+          color: '#7DC0F1', 
+          description: 'UpdatingPure - Legacy data', 
+          totalAmount: '?',
+          totalText: 'Project Cost:'
+          })(class="updating")
+          img(src=require('../../assets/svg/organizationalProjects/updating.svg'))
+        +card({
+          canvasId: 'organizational-project-03', 
+          percent: '100%', 
+          color: '#7DC0F1', 
+          description: 'Upgrade the sound system in Auditorium', 
+          totalAmount: '?',
+          totalText: 'Project Cost:'
+          })(class="sound")
+          img(src=require('../../assets/svg/organizationalProjects/sound.svg'))
+        +card({
+          canvasId: 'organizational-project-04', 
+          percent: '99%', 
+          color: '#7DC0F1', 
+          description: 'HR - New HR System Implementation', 
+          totalAmount: '?',
+          totalText: 'Project Cost:'
+          })(class="hr-system")
+          img(src=require('../../assets/svg/organizationalProjects/hr_system.svg'))
+        
+        
+        +card({
           canvasId: 'organizational-project-1', 
           percent: '65%', 
           color: '#FFB455', 

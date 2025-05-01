@@ -7,7 +7,31 @@ const organizationalProjectsPage = document.querySelector(".organizationalProjec
 const organizationalProjectsClose = document.querySelector(".organizationalProjectsClose");
 
 const organizationalProjectsCharts = [
-  {
+  { 
+    title: "develop",
+    canvas: document.querySelector('#organizational-project-01'),
+    values: [100, 0],
+    valuesColors: ["#7DC0F1", "#E0E0E0"],
+  },
+  { 
+    title: "updating",
+    canvas: document.querySelector('#organizational-project-02'),
+    values: [100, 0],
+    valuesColors: ["#7DC0F1", "#E0E0E0"],
+  },
+  { 
+    title: "sound",
+    canvas: document.querySelector('#organizational-project-03'),
+    values: [100, 0],
+    valuesColors: ["#7DC0F1", "#E0E0E0"],
+  },
+  { 
+    title: "hr-system",
+    canvas: document.querySelector('#organizational-project-04'),
+    values: [99, 1],
+    valuesColors: ["#7DC0F1", "#E0E0E0"],
+  },
+  { 
     title: "data",
     canvas: document.querySelector('#organizational-project-1'),
     values: [65, 35],
