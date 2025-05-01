@@ -60,7 +60,7 @@
 
   .engagement-curation-binefic-graph {
     width: 40%;
-    height: 228px;
+    height: 174px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -125,7 +125,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-    height: 228px;
+    height: 174px;
     padding-top: 5px;
     padding-bottom: 8px;
     padding-left: 20px;
