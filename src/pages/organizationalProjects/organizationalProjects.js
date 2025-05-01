@@ -31,36 +31,7 @@ const organizationalProjectsCharts = [
     values: [99, 1],
     valuesColors: ["#7DC0F1", "#E0E0E0"],
   },
-  { 
-    title: "data",
-    canvas: document.querySelector('#organizational-project-1'),
-    values: [65, 35],
-    valuesColors: ["#FFB455", "#E0E0E0"],
-  },
-  {
-    title: "dinner",
-    canvas: document.querySelector('#organizational-project-2'),
-    values: [65, 35],
-    valuesColors: ["#f47d39", "#E0E0E0"],
-  },
-  {
-    title: "automatic",
-    canvas: document.querySelector('#organizational-project-3'),
-    values: [89, 11],
-    valuesColors: ["#FFB455", "#E0E0E0"],
-  },
-  {
-    title: "heart",
-    canvas: document.querySelector('#organizational-project-4'),
-    values: [95, 5],
-    valuesColors: ["#FFB455", "#E0E0E0"],
-  },
-  {
-    title: "whatsapp",
-    canvas: document.querySelector('#organizational-project-5'),
-    values: [100, 0],
-    valuesColors: ["#F47D39", "#E0E0E0"],
-  },
+  
 ];
 
 const allCharts = [];
